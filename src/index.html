@@ -7,32 +7,144 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-black">
+    <!-- ////////////header//////// -->
     <header>
-      <div>
-        <span>ملودیفای</span>
+      <div
+        class="bg-header-image h-96 bg-contain bg-no-repeat mt-6 backdrop-opacity-95"
+      >
+        <img class="m-auto" src="./img/logo.png" />
+        <div class="mt-20">
+          <h1 class="text-2xl text-white font-bold text-center">
+            مرجع پخش و دانلود آهنگ های ایرانی و خارجی
+          </h1>
+          <h2 class="text-base mt-3 text-GRAY7 text-center font-medium">
+            مرجع پخش و دانلود آهنگ های ایرانی و خارجی
+          </h2>
+        </div>
       </div>
     </header>
     <main>
-      <section>
-        <div>
-          <h1 class="text-3xl font-bold underline">
-            مرجع پخش و دانلود آهنگ های ایرانی و خارجی
-          </h1>
-          <h2 class="text-sm">مرجع پخش و دانلود آهنگ های ایرانی و خارجی</h2>
-        </div>
-      </section>
-      <section>
-        <h3>در همه پلتفرم ها</h3>
+      <!--////////// slider//////////// -->
+
+      <section class="text-white">
+        <h3 class="font-semibold text-lg text-center inline">
+          در همه پلتفرم ها
+        </h3>
         <div>slider...</div>
-        <h3>اندروید</h3>
-        <div>android...</div>
-        <h3>تلوزیون</h3>
-        <div>tv...</div>
-        <h3>دسکتاپ</h3>
-        <div>desktop...</div>
-        <h3>آیفون</h3>
-        <div>iphone...</div>
+      </section>
+      <!-- //////////////platform download ////////-->
+      <section class="text-white">
+        <div class="flex justify-center items-center">
+          <img class="mr-1.5" alt="android logo" src="./img/android 1.png" />
+          <div class="flex items-center">
+            <h3 class="font-semibold text-sm text-center inline">اندروید</h3>
+          </div>
+        </div>
+        <div class="flex justify-center items-center py-9">
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7 py-12"
+          >
+            <img alt="chain logo" src="./img/chain.png" />
+            <span class="tetx-12 mt-12">لینک مستقیم</span>
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <img src="./img/playstore (2) 1.png" alt="google paly logo" />
+            <span class="text-12"> گوگل پلی استور </span>
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img class="mr-1.5" src="./img/tv.png" alt="tv logo" />
+          <h3 class="font-semibold text-sm text-center inline">تلوزیون</h3>
+        </div>
+        <div class="flex justify-center items-center py-9">
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img class="mr-1.5" src="./img/monitor .png" alt="monitor logo" />
+          <h3 class="font-semibold text-sm text-center inline">دسکتاپ</h3>
+        </div>
+        <div class="flex justify-center items-center py-9">
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img class="mr-1.5" src="./img/apple.png" alt="apple logo" />
+          <h3 class="font-semibold text-sm text-center inline">آیفون</h3>
+        </div>
+        <div class="flex justify-center items-center py-9">
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+          <div
+            class="flex-col w-140 bg-PRIMARY h-140 flex justify-center items-center rounded-7"
+          >
+            <a class="inline-flex items-center m-auto" href="#">
+              <img src="./img/download.png" alt="download logo" />
+              <span class="ml-0.5 font-medium text-10 text-GRAY7">
+                دریافت
+              </span>
+            </a>
+          </div>
+        </div>
       </section>
       <section>
         <div>...something</div>
@@ -65,8 +177,54 @@
       </section>
       <section>
         <h3>دیدگاه کاربران</h3>
+        <div>
+          <span
+            >امتیاز در Playstore :<span>...start</span><span>4.9</span>
+          </span>
+        </div>
+        <div>
+          <span>تعداد نصب:</span>
+          <span> 1.7 M </span>
+          <div>...card</div>
+        </div>
       </section>
     </main>
-    <h2>ascsac</h2>
+    <footer>
+      <div>
+        <span> ملودیفای </span>
+        <span> ...svg </span>
+      </div>
+      <h3>
+        آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با ملودیفای
+        تجربه کنید!
+      </h3>
+      <ul>
+        <li>گوگل پلی استور</li>
+        <li>آیفون</li>
+        <li>ویندوز</li>
+        <li>لینوکس</li>
+      </ul>
+      <ul>
+        <li>دانلود مستقیم</li>
+        <li>تلوزیون هوشمند</li>
+        <li>مک</li>
+      </ul>
+      <ul>
+        <li>قوانین و شرایط استفاده</li>
+        <li>حریم خصوصی</li>
+        <li>DMCA</li>
+      </ul>
+      <ul>
+        <li>
+          <a href="melodify.group@gmail.com"> melodify.group@gmail.com </a>
+        </li>
+        <li>
+          <a link="#"> @melodify.official </a>
+        </li>
+      </ul>
+      <div>
+        <span>Copyright © 2023.All Rights Reserved By melodify</span>
+      </div>
+    </footer>
   </body>
 </html>
