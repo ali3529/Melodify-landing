@@ -67,6 +67,7 @@ module.exports = {
 
       },
       backgroundImage: {
+        "purple-gradient": "linear-gradient(180deg, #AF2DFF 0 %, #6703A5 100 %)",
         "header-image": "url('/src/img/header.png')",
         "lines": "url('/src/img/lines.svg')",
       },
