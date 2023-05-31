@@ -7,7 +7,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body class="bg-black text-white">
+  <body class="bg-BLACK text-WHITE">
     <!-- ////////////header//////// -->
     <header>
       <div
@@ -24,17 +24,17 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="px-12">
       <!--////////// slider//////////// -->
 
-      <section class="">
+      <section>
         <h3 class="font-semibold text-lg text-center inline">
           در همه پلتفرم ها
         </h3>
         <div>slider...</div>
       </section>
       <!-- //////////////platform download ////////-->
-      <section class="">
+      <section>
         <div class="flex justify-center items-center">
           <img class="mr-1.5" alt="android logo" src="./img/android 1.png" />
           <div class="flex items-center">
@@ -254,54 +254,188 @@
       </section>
       <!-- //////////user comments/////////// -->
       <section>
-        <h3>دیدگاه کاربران</h3>
-        <div>
-          <span
-            >امتیاز در Playstore :<span>...start</span><span>4.9</span>
-          </span>
-        </div>
-        <div>
-          <span>تعداد نصب:</span>
-          <span> 1.7 M </span>
-          <div>...card</div>
+        <div class="mt-80">
+          <h3 class="font-semibold text-18 text-center">دیدگاه کاربران</h3>
+          <div class="flex justify-center items-center mt-32">
+            <span class="font-medium">امتیاز در Playstore : </span>
+            <div class="flex mr-12">
+              <img class="mr-4" src="./img/star 1.png" />
+              <img class="mr-4" src="./img/star 5.png" />
+              <img class="mr-4" src="./img/star 5.png" />
+              <img class="mr-4" src="./img/star 5.png" />
+              <img class="mr-4" src="./img/star 5.png" />
+              <span class="font-semibold text-18 mr-12">4.9</span>
+            </div>
+          </div>
+          <div class="mt-11 text-center">
+            <span class="font-medium">تعداد نصب:</span>
+            <span class="font-semibold text-18"> 1.7 M </span>
+            <!--//////////// comment card /////////-->
+            <div class="mt-32 mb-80">
+              <div
+                class="flex m-auto w-330 h-224 bg-PRIMARY relative rounded-7 p-16 border-1 border-GRAY1"
+              >
+                <img
+                  class="absolute left-24 z-10 -top-11"
+                  src="./img/quote.png"
+                  alt="quote shape"
+                />
+                <div>
+                  <img src="./img/person.png" alt="user image" />
+                </div>
+                <div>
+                  <h5 class="text-14 font-semibold text-YELLOW">
+                    Reza Abolhasani
+                  </h5>
+                  <p class="text-GRAY7 mt-6">
+                    با سلام و تشکر از برنامه خوب تون. به نظر من برنامه خیلی خوب
+                    و حتی میشه گفت بهترین. حتماً دانلود کنید که پشیمان نمی شوید.
+                    باتشکر از کسانی که برای این برنامه زحمات زیادی کشیدن.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <!-- ////////////////footer//////////// -->
     <footer>
-      <div>
-        <span> ملودیفای </span>
-        <span> ...svg </span>
-      </div>
-      <h3>
-        آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با ملودیفای
-        تجربه کنید!
-      </h3>
-      <ul>
-        <li>گوگل پلی استور</li>
-        <li>آیفون</li>
-        <li>ویندوز</li>
-        <li>لینوکس</li>
-      </ul>
-      <ul>
-        <li>دانلود مستقیم</li>
-        <li>تلوزیون هوشمند</li>
-        <li>مک</li>
-      </ul>
-      <ul>
-        <li>قوانین و شرایط استفاده</li>
-        <li>حریم خصوصی</li>
-        <li>DMCA</li>
-      </ul>
-      <ul>
-        <li>
-          <a href="melodify.group@gmail.com"> melodify.group@gmail.com </a>
-        </li>
-        <li>
-          <a link="#"> @melodify.official </a>
-        </li>
-      </ul>
-      <div>
-        <span>Copyright © 2023.All Rights Reserved By melodify</span>
+      <div class="text-WHITE bg-GRAY4 px-24 pt-24">
+        <div class="flex justify-center items-center flex-col">
+          <img class="w-140" src="./img/logo.png" alt="Melodify logo" />
+          <h3 class="text-14 mt-16 text-center">
+            آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با
+            ملودیفای تجربه کنید!
+          </h3>
+        </div>
+        <div class="flex flex-wrap start mt-32">
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW"
+              >
+                <img
+                  class="ml-6 fill-YELLOW active:fill-YELLOW hover:fill-YELLOW focus:fill-YELLOW inline-flex"
+                  src="img/arrow.svg"
+                />
+                گوگل پلی استور
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                آیفون
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                ویندوز
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                لینوکس
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mr-64">
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                دانلود مستقیم
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                تلوزیون هوشمند
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                مک
+              </a>
+            </li>
+          </ul>
+          <ul class="basis-full my-24">
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                قوانین و شرایط استفاده
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                حریم خصوصی
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex"
+              >
+                <img class="ml-6" src="img/arrow.svg" />
+                DMCA
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="my-24">
+          <li class="mb-11">
+            <a class="flex" href="melodify.group@gmail.com">
+              <img class="ml-12" src="./img/email.svg" alt="email logo" />
+              melodify.group@gmail.com
+            </a>
+          </li>
+          <li>
+            <a class="flex" link="#">
+              <img
+                class="ml-12"
+                src="./img/Instagram.svg"
+                alt="inistageram logo"
+              />
+
+              @melodify.official
+            </a>
+          </li>
+        </ul>
+        <div class="bg-GRAY2 block h-1"></div>
+
+        <span class="block text-center p-12"
+          >Copyright © 2023.All Rights Reserved By melodify</span
+        >
       </div>
     </footer>
   </body>
