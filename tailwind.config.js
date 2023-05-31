@@ -2,7 +2,32 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-
+    spacing: {
+      "102": "6.375rem",
+      "9": ".526rem",
+      "4": "0.25rem",
+      "8": "0.5rem",
+      "6": ".375rem",
+      "11": ".687rem",
+      "12": "0.75rem",
+      "16": "1rem",
+      "20": "1.25rem",
+      "24": "1.5rem",
+      "28": "1.75rem",
+      "32": "2rem",
+      "36": "2.25rem",
+      "40": "2.5rem",
+      "48": "3rem",
+      "56": "3.5rem",
+      "64": "4rem",
+      "72": "4.5rem",
+      "80": "5rem",
+      "120": "7.5rem",
+      "140": "8.75rem",
+      "406": "25.375rem",
+      "235": "14.6rem",
+      "-40": "-2.5rem"
+    },
     extend: {
       colors: {
         "BLACK": "#0B0B0D",
@@ -21,26 +46,7 @@ module.exports = {
         "YELLOW-DARK": "#FFB300",
         "ORANGE": "#F2994A"
       },
-      spacing: {
-        "102": "6.375rem",
-        "9": ".526rem",
-        "4": "0.25rem",
-        "8": "0.5rem",
-        "12": "0.75rem",
-        "16": "1rem",
-        "24": "1.5rem",
-        "28": "1.75",
-        "32": "2rem",
-        "36": "2.25rem",
-        "40": "2.5rem",
-        "48": "3rem",
-        "56": "3.5rem",
-        "64": "4rem",
-        "72": "4.5rem",
-        "80": "5rem",
-        "120": "7.5rem",
-        "140": "8.75rem"
-      },
+
       borderRadius: {
         "7": ".4375rem"
       },
@@ -58,7 +64,8 @@ module.exports = {
 
       },
       backgroundImage: {
-        "header-image": "url('/src/img/header.png')"
+        "header-image": "url('/src/img/header.png')",
+        "lines": "url('/src/img/lines.svg')",
       },
     },
   },
