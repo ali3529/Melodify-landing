@@ -5,3 +5,9 @@
   font-family: Dana;
   src: url('Dana_Variable.ttf');
 }
+.fa-num {
+  font-variation-settings: 'wght' 200, 'FANU' 0;
+}
+/* * {
+  outline: 1px solid #f00 !important;
+} */

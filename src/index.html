@@ -5,485 +5,532 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <link
       href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <script src="./js/slider.js"></script>
     <title>Melodify</title>
   </head>
   <body class="text-white bg-black">
     <!-- ////////////header//////// -->
 
-    <header>
-      <div class="overflow-hidden mt-24">
-        <div class="relative h-330 md:h-681">
+    <header class="overflow-hidden">
+      <div class="mt-24">
+        <div class="w-full relative h-330 lg:h-681">
           <img
-            class="z-10 absolute scale-110 md:scale-100"
+            class="z-10 absolute w-full scale-150 lg:h-681 md:scale-90 lg:scale-100"
             src="./img/image_gradiant.png"
           />
           <img
-            class="absolute scale-110 w-100 md:scale-100 z-0"
+            class="absolute scale-150 w-full lg:h-681 md:scale-90 lg:scale-100 z-0"
             src="./img/header.png"
           />
-          <div class="z-20 px-36 absolute">
-            <img class="m-auto md:mr-40 w-140" src="./img/logo.png" />
+          <div class="z-20 px-36 absolute w-full">
+            <img class="m-auto lg:mr-40 w-140" src="./img/logo.png" />
             <div class="mt-20">
               <h1
-                class="font-primary text-24 text-white font-bold text-center md:text-32"
+                class="font-primary text-24 text-white font-bold text-center lg:text-32"
               >
                 مرجع پخش و دانلود آهنگ های ایرانی و خارجی
               </h1>
               <h2
-                class="font-primary text-16 mt-12 text-center text-gray7 font-medium md:text-24"
+                class="font-primary text-16 mt-12 text-center text-gray7 font-medium lg:text-24"
               >
                 مرجع پخش و دانلود آهنگ های ایرانی و خارجی
               </h2>
             </div>
-            <img class="mt-28 md:w-1172" src="./img/MELODIFY.png" />
+            <img
+              class="lg:mt-140 mt-40 m-auto lg:w-1172"
+              alt="melodify logo"
+              src="./img/MELODIFY.png"
+            />
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <!--////////// slider//////////// -->
-      <!-- <section>
-        <div class="splide" >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div>
-                  <img src="./img/home 2.png" alt="" />
-                </div>
-              </div>
-              <li class="splide__slide">
-                <div>
-                  <img src="./img/Group 240024.png" alt="" />
-                </div>
-              </div>
-              <li class="splide__slide">
-                <div>
-                  <img src="./img/home 2.png" alt="" />
-                </div>
-              </div>
-            </>
-          </div>
-        </div>
-      </section> -->
-      <h3
-        class="font-primary font-semibold text-18 mb-32 text-center md:text-30 md:mb-15"
-      >
-        در همه پلتفرم ها
-      </h3>
-      <div class="flex flex-col items-center md:flex-row">
-        <section>
-          <div class="relative h-376">
-            <img class="absolute -top-48 z-0" src="./img/multi_line.svg" />
-            <div></div>
-            <div class="z-10">
-              <img src="./img/Group 240024.png" />
-            </div>
-          </div>
-        </section>
-        <!-- //////////////platform download ////////-->
-        <section class="relative z-0">
-          <div class="flex flex-col md:flex-row mt-24 md:mr-235">
-            <div class="flex justify-center items-center md:ml-40">
-              <h3
-                class="font-primary font-semibold text-16 text-center inline md:text-18"
-              >
-                اندروید
-              </h3>
-              <img class="mr-11" alt="android logo" src="./img/android 1.png" />
-            </div>
-            <div class="flex justify-center items-center py-9">
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img alt="chain logo" src="./img/chain.png" />
-                <span class="font-primary tetx-12 mt-12">لینک مستقیم</span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/playstore (2) 1.png" alt="google paly logo" />
-                <span class="font-primary text-12 font-semibold mt-12">
-                  گوگل پلی استور
-                </span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col md:flex-row mt-24 md:mr-339">
-            <div class="flex justify-center items-center md:ml-40">
-              <h3
-                class="font-primary font-semibold text-16 text-center inline md:text-18"
-              >
-                تلوزیون
-              </h3>
-              <img class="mr-11" src="./img/tv.png" alt="tv logo" />
-            </div>
-            <div class="flex justify-center items-center py-9">
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img alt="television logo" src="./img/television 1 (1).png" />
-                <span class="font-primary text-12 font-semibold mt-12">
-                  تلوزیون
-                </span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col md:flex-row mt-24 md:mr-234">
-            <div class="flex justify-center items-center md:ml-40">
-              <h3
-                class="font-primary font-semibold text-16 text-center inline md:text-18"
-              >
-                دسکتاپ
-              </h3>
-              <img class="mr-11" src="./img/monitor .png" alt="monitor logo" />
-            </div>
-            <div class="flex justify-center items-center py-9">
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/mac.png" alt="mac logo" />
-                <span class="font-primary text-12 font-semibold mt-12">مک</span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/linux.png" alt="linux os logo" />
-                <span class="font-primary mt-12 text-12">لینوکس</span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/window.png" alt="window os logo" />
-                <span class="font-primary text-12 font-semibold mt-12"
-                  >ویندوز</span
-                >
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col md:flex-row mt-24 md:mr-140">
-            <div class="flex justify-center items-center md:ml-40">
-              <h3
-                class="font-primary font-semibold text-16 text-center inline md:text-18"
-              >
-                آیفون
-              </h3>
-              <img class="mr-11" src="./img/apple.png" alt="apple logo" />
-            </div>
-            <div class="flex justify-center items-center py-9">
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/apple 2.png" alt="apple company logo" />
-                <span class="font-primary mt-12 text-12">آیفون</span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-              <div
-                class="flex-col mx-6 w-140 bg-primary h-140 flex justify-center items-center rounded-7 py-12 md:mx-12"
-              >
-                <img src="./img/waplication.png" alt="web app logo" />
-                <span class="font-primary text-12 font-semibold mt-12">
-                  وب اپلیکیشن
-                </span>
-                <a class="inline-flex items-baseline m-auto" href="#">
-                  <span
-                    class="font-primary ml-4 font-medium text-10 text-gray7"
-                  >
-                    دریافت
-                  </span>
-                  <img src="./img/download.png" alt="download logo" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!--////////////////property list////////////////  -->
-      <section>
-        <div
-          class="overflow-hidden flex flex-col justify-center items-center md:flex-row"
-        >
-          <div class="relative mt-72 h-224">
-            <img
-              class="absolute left-0 z-10 -top-270 md:h-807"
-              src="./img/lines.svg"
-            />
-            <div class="relative h-224 md:h-450">
-              <img
-                class="absolute z-20 -left-64 top-0"
-                src="./img/golden_light_left.svg"
-              />
-              <img
-                class="absolute bottom-0 z-20 -left-64"
-                src="./img/golden_light_right.svg"
-              />
+    <main class="overflow-hidden">
+      <div class="relative">
+        <!--////////// slider//////////// -->
 
-              <img
-                src="./img/Plyer 2.png"
-                class="absolute -left-80 z-30 md:-left-64"
-                alt=" music player image"
-              />
-            </div>
-          </div>
-          <ul class="text-16 font-semibold mt-28 mx-20">
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-
-              مرجع پخش و دانلود آهنگ های
-            </li>
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-              مرجع پخش و دانلود آهنگ های ایرانی وخارجی
-            </li>
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-              مرجع پخش و دانلود
-            </li>
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-              مرجع پخش و دانلود آهنگ های ایرانی وخارجی
-            </li>
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-              مرجع پخش و دانلود آهنگ های
-            </li>
-            <li class="font-primary flex font-medium">
-              <img class="ml-8" src="./img/block.svg" alt="block" />
-              مرجع پخش و دانلود
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- /////////////web app property///////////// -->
-      <section class="mt-80">
         <h3
-          class="font-primary text-center font-semibold text-16 mb-16 md:text-30"
+          class="font-primary font-semibold text-18 mb-32 text-center lg:text-30 lg:mb-15"
         >
-          ویژگی ها
+          در همه پلتفرم ها
         </h3>
-        <div
-          class="flex justify-center flex-col items-center md:flex-row md:px-140 md:justify-between"
-        >
-          <div class="mt-28 md:w-194">
-            <img
-              class="m-auto w-40 h-40 md:w-64 md:h-64"
-              src="./img/music-note 1.png"
-              alt="music notes"
-            />
-            <p
-              class="font-primary font-medium mt-11 md:text-center text-16 md:text-18 md:break-words"
-            >
-              2000+مجموعه ی متفاوت با به روزرسانی روزانه
-            </p>
-          </div>
-          <div class="mt-28 md:w-194">
-            <img
-              class="m-auto w-40 h-40 md:w-64 md:h-64"
-              src="./img/tv-screen 1.png"
-              alt="tv screen logo"
-            />
-            <p
-              class="font-primary font-medium mt-11 md:text-center text-16 md:text-18 md:break-words"
-            >
-              امکان استفاده در پلتفرم های مختلف
-            </p>
-          </div>
-          <div class="mt-28 md:w-194">
-            <img
-              class="m-auto w-40 h-40 md:w-64 md:h-64"
-              src="./img/offline 1.png"
-              alt="no wifi logo"
-            />
-            <p
-              class="font-primary font-medium mt-11 md:text-center text-16 md:text-18 md:break-words"
-            >
-              امکان پخش موزیک به صورت آنلاین و افلاین
-            </p>
-          </div>
-          <div class="mt-28 md:w-194">
-            <img
-              class="m-auto w-40 h-40 md:w-64 md:h-64"
-              src="./img/save-file.png"
-              alt="download logo"
-            />
-
-            <p
-              class="font-primary font-medium mt-11 md:text-center text-16 md:text-18 md:break-words"
-            >
-              انتخاب فولدر بندی و دانلود آسان
-            </p>
-          </div>
-          <div class="mt-28 md:w-194">
-            <img
-              class="m-auto w-40 h-40 md:w-64 md:h-64"
-              src="./img/playlist (3) 1.png"
-              alt="play list logo"
-            />
-            <p
-              class="font-primary font-medium mt-11 md:text-center text-16 md:text-18 md:break-words"
-            >
-              امکان ساخت پلی لیست های شخصی
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- //////////user comments/////////// -->
-      <section>
-        <div class="mt-80">
-          <h3 class="font-primary font-semibold text-18 text-center md:text-30">
-            دیدگاه کاربران
-          </h3>
-          <div class="flex justify-center mt-32">
-            <p
-              class="font-primary font-medium text-end text-16 md:text-18 inline-flex items-center"
-            >
-              امتیاز در Playstore :
-            </p>
-            <div class="flex mr-12">
-              <img src="./img/star 1.png" />
-              <img class="mr-4 w-16 md:w-20" src="./img/star 5.png" />
-              <img class="mr-4 w-16 md:w-20" src="./img/star 5.png" />
-              <img class="mr-4 w-16 md:w-20" src="./img/star 5.png" />
-              <img class="mr-4 w-16 md:w-20" src="./img/star 5.png" />
-              <p
-                class="font-primary font-semibold text-18 mr-16 text-center md:text-20"
+        <div class="flex flex-col items-center lg:flex-row">
+          <section>
+            <div class="relative h-376">
+              <img
+                class="absolute -top-48 z-0 right-0 h-394 lg:h-721"
+                src="./img/multi_line.svg"
+              />
+              <div class="relative">
+                <img
+                  class="h-291 left-54 absolute lg:left-48 lg:h-406"
+                  src="./img/phoneShape.png"
+                />
+                <div id="main-carousel" class="splide top-12 left-64 lg:top-16">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img
+                          class="lg:w-394"
+                          src="./img/slide1.png"
+                          alt="Melodify music player"
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          class="lg:w-394"
+                          src="./img/slide2.png"
+                          alt="Melodify music player"
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          class="lg:w-394"
+                          src="./img/slide3.png"
+                          alt="Melodify music player"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- //////////////platform download ////////-->
+          <section>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-235">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primary font-semibold text-16 text-center inline lg:text-18"
+                >
+                  اندروید
+                </h3>
+                <img
+                  class="mr-11"
+                  alt="android logo"
+                  src="./img/android 1.png"
+                />
+              </div>
+              <div
+                class="flex justify-center gap-12 items-center py-9 lg:gap-24"
               >
-                4.9
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img alt="chain logo" src="./img/chain.png" />
+                  <span class="font-primary tetx-12 mt-12">لینک مستقیم</span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/playstore (2) 1.png" alt="google paly logo" />
+                  <span class="font-primary text-12 font-semibold mt-12">
+                    گوگل پلی استور
+                  </span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-339">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primary font-semibold text-16 text-center inline lg:text-18"
+                >
+                  تلوزیون
+                </h3>
+                <img class="mr-11" src="./img/tv.png" alt="tv logo" />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img alt="television logo" src="./img/television 1 (1).png" />
+                  <span class="font-primary text-12 font-semibold mt-12">
+                    تلوزیون
+                  </span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-234">
+              <div class="flex gap-12 justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primary font-semibold text-16 text-center inline lg:text-18"
+                >
+                  دسکتاپ
+                </h3>
+                <img
+                  class="mr-11"
+                  src="./img/monitor .png"
+                  alt="monitor logo"
+                />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/mac.png" alt="mac logo" />
+                  <span class="font-primary text-12 font-semibold mt-12"
+                    >مک</span
+                  >
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/linux.png" alt="linux os logo" />
+                  <span class="font-primary mt-12 text-12">لینوکس</span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/window.png" alt="window os logo" />
+                  <span class="font-primary text-12 font-semibold mt-12"
+                    >ویندوز</span
+                  >
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-140">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primary font-semibold text-16 text-center inline lg:text-18"
+                >
+                  آیفون
+                </h3>
+                <img class="mr-11" src="./img/apple.png" alt="apple logo" />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/apple 2.png" alt="apple company logo" />
+                  <span class="font-primary mt-12 text-12">آیفون</span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/waplication.png" alt="web app logo" />
+                  <span class="font-primary text-12 font-semibold mt-12">
+                    وب اپلیکیشن
+                  </span>
+                  <a class="inline-flex items-baseline m-auto" href="#">
+                    <span
+                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                    >
+                      دریافت
+                    </span>
+                    <img src="./img/download.png" alt="download logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--////////////////property list////////////////  -->
+        <section>
+          <div>
+            <div class="mt-72 h-224">
+              <img
+                class="absolute left-0 z-0 top-888 lg:h-1172 lg:top-330"
+                src="./img/lines.svg"
+              />
+              <div class="relative h-224 lg:h-450">
+                <img
+                  class="absolute z-20 -left-64 top-0 lg:bottom-80 lg:left-72"
+                  src="./img/golden_light_left.svg"
+                />
+                <img
+                  class="absolute bottom-0 z-20 -left-64 lg:bottom-20 lg:left-72"
+                  src="./img/golden_light_right.svg"
+                />
+
+                <img
+                  src="./img/Plyer 2.png"
+                  class="absolute -left-80 z-30 lg:-left-64 h-full"
+                  alt=" music player image"
+                />
+              </div>
+            </div>
+            <div class="lg:h-full">
+              <ul class="text-16 font-semibold mt-28 mx-20 lg:text-18 m-auto">
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+
+                  مرجع پخش و دانلود آهنگ های
+                </li>
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های ایرانی وخارجی
+                </li>
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود
+                </li>
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های ایرانی وخارجی
+                </li>
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های
+                </li>
+                <li class="font-primary flex font-medium mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- /////////////web app property///////////// -->
+        <section class="mt-80 relative z-0">
+          <h3
+            class="font-primary text-center font-semibold text-16 mb-16 lg:text-30"
+          >
+            ویژگی ها
+          </h3>
+          <div
+            class="flex justify-center flex-col items-center lg:flex-row lg:px-140 lg:justify-between"
+          >
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/music-note 1.png"
+                alt="music notes"
+              />
+              <p
+                class="font-primary font-medium mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                2000+مجموعه ی متفاوت با به روزرسانی روزانه
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/tv-screen 1.png"
+                alt="tv screen logo"
+              />
+              <p
+                class="font-primary font-medium mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان استفاده در پلتفرم های مختلف
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/offline 1.png"
+                alt="no wifi logo"
+              />
+              <p
+                class="font-primary font-medium mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان پخش موزیک به صورت آنلاین و افلاین
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/save-file.png"
+                alt="download logo"
+              />
+
+              <p
+                class="font-primary font-medium mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                انتخاب فولدر بندی و دانلود آسان
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/playlist (3) 1.png"
+                alt="play list logo"
+              />
+              <p
+                class="font-primary font-medium mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان ساخت پلی لیست های شخصی
               </p>
             </div>
           </div>
-          <div class="mt-11 text-center">
-            <span class="font-primary text-18 font-medium">تعداد نصب:</span>
-            <span class="font-primary mr-12 font-semibold text-18 md:mr-24">
-              1.7 M
-            </span>
-            <!--//////////// comment card /////////-->
-            <div class="mt-32 mb-80">
-              <div
-                class="flex gap-12 items-start m-auto w-330 bg-primary relative rounded-7 p-16 border-1 border-x-gray1 md:w-604 md:gap-24"
+        </section>
+        <!-- //////////user comments/////////// -->
+        <section>
+          <div class="mt-80">
+            <h3
+              class="font-primary font-semibold text-18 text-center lg:text-30"
+            >
+              دیدگاه کاربران
+            </h3>
+            <div class="flex justify-center mt-32">
+              <p
+                class="font-primary font-medium text-end text-16 lg:text-18 inline-flex items-center"
               >
-                <img
-                  class="absolute left-24 -top-11 md:w-32"
-                  src="./img/quote.png"
-                  alt="quote shape"
-                />
-                <div class="">
-                  <img class="w-376" src="./img/person.png" alt="user image" />
-                </div>
-                <div class="flex justify-center flex-col items-start">
-                  <span
-                    class="font-primary text-14 font-semibold text-yellow md:text-18"
-                  >
-                    Reza Abolhasani:
-                  </span>
-                  <p
-                    class="font-primary text-gray7 text-14 text-justify leading-7 mt-6 md:text-16"
-                  >
-                    با سلام و تشکر از برنامه خوب تون. به نظر من برنامه خیلی خوب
-                    و حتی میشه گفت بهترین. حتماً دانلود کنید که پشیمان نمی شوید.
-                    باتشکر از کسانی که برای این برنامه زحمات زیادی کشیدن.
-                  </p>
-                  <div class="flex mt-11 mb-11">
-                    <img src="./img/star 1.png" />
-                    <img class="mr-4" src="./img/star 5.png" />
-                    <img class="mr-4" src="./img/star 5.png" />
-                    <img class="mr-4" src="./img/star 5.png" />
-                    <img class="mr-4" src="./img/star 5.png" />
-                    <span class="font-primary font-semibold text-18 mr-12"
-                      >4.5</span
+                امتیاز در Playstore :
+              </p>
+              <div class="flex mr-12">
+                <img src="./img/star 1.png" />
+                <img class="mr-4 w-16 lg:w-20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20" src="./img/star 5.png" />
+                <p
+                  class="font-primary font-semibold text-18 mr-16 text-center lg:text-20"
+                >
+                  4.9
+                </p>
+              </div>
+            </div>
+            <div class="mt-11 text-center">
+              <span class="font-primary text-18 font-medium">تعداد نصب:</span>
+              <span class="font-primary mr-12 font-semibold text-18 lg:mr-24">
+                1.7 M
+              </span>
+              <!--//////////// comment card /////////-->
+              <div class="mt-32 mb-80">
+                <div
+                  class="flex gap-12 items-start m-auto w-330 bg-primary relative rounded-7 p-16 border-1 border-x-gray1 lg:w-604 lg:gap-24"
+                >
+                  <img
+                    class="absolute left-24 -top-11 lg:w-32"
+                    src="./img/quote.png"
+                    alt="quote shape"
+                  />
+                  <div class="">
+                    <img
+                      class="w-376"
+                      src="./img/person.png"
+                      alt="user image"
+                    />
+                  </div>
+                  <div class="flex justify-center flex-col items-start">
+                    <span
+                      class="font-primary text-14 font-semibold text-yellow lg:text-18"
                     >
+                      Reza Abolhasani:
+                    </span>
+                    <p
+                      class="font-primary text-gray7 text-14 text-justify leading-7 mt-6 lg:text-16"
+                    >
+                      با سلام و تشکر از برنامه خوب تون. به نظر من برنامه خیلی
+                      خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که پشیمان نمی
+                      شوید. باتشکر از کسانی که برای این برنامه زحمات زیادی
+                      کشیدن.
+                    </p>
+                    <div class="flex mt-11 mb-11">
+                      <img src="./img/star 1.png" />
+                      <img class="mr-4" src="./img/star 5.png" />
+                      <img class="mr-4" src="./img/star 5.png" />
+                      <img class="mr-4" src="./img/star 5.png" />
+                      <img class="mr-4" src="./img/star 5.png" />
+                      <span class="font-primary font-semibold text-18 mr-12"
+                        >4.5</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <!-- ////////////////footer//////////// -->
     <footer>
-      <div class="text-white bg-gray4 px-24 pt-24 md:px-140">
-        <div class="md:flex md:items-start md:gap-102 md:mt-56">
-          <div class="flex justify-center items-center flex-col md:items-start">
+      <div class="text-white bg-gray4 pt-24">
+        <div
+          class="lg:flex lg:items-start lg:mt-56 lg:justify-center flex-wrap"
+        >
+          <div class="flex justify-center items-center flex-col lg:items-start">
             <img
-              class="w-140 md:w-185"
+              class="w-140 lg:w-185"
               src="./img/logo.png"
               alt="Melodify logo"
             />
             <h3
-              class="font-primary wra text-14 mt-28 md:mt-16 text-center md:w-300 md:text-start"
+              class="font-primary wra text-14 mt-28 lg:mt-16 text-center lg:w-300 lg:text-start"
             >
               آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با
               ملودیفای تجربه کنید!
             </h3>
           </div>
           <div
-            class="flex flex-wrap start mt-32 md:flex-nowrap md:gap-64 md:mt-0"
+            class="flex flex-wrap start mt-32 lg:flex-nowrap lg:gap-64 lg:mt-0"
           >
             <ul>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW lg:text-16"
                 >
                   <img
                     class="ml-6 fill-YELLOW active:fill-YELLOW hover:fill-YELLOW focus:fill-YELLOW inline-flex"
@@ -493,28 +540,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                 </a>
               </li>
 
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   آیفون
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   ویندوز
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   لینوکس
@@ -522,58 +569,58 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
               </li>
             </ul>
 
-            <ul class="mr-64 md:mr-0">
-              <li class="mt-8 md:mt-12">
+            <ul class="mr-64 lg:mr-0">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   دانلود مستقیم
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   تلوزیون هوشمند
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   مک
                 </a>
               </li>
             </ul>
-            <ul class="my-24 grow md:grow-0 md:my-0">
-              <li class="mt-8 md:mt-12">
+            <ul class="my-24 grow lg:grow-0 lg:my-0">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   قوانین و شرایط استفاده
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   حریم خصوصی
                 </a>
               </li>
-              <li class="mt-8 md:mt-12">
+              <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex md:text-16"
+                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
                 >
                   <img class="ml-6" src="img/arrow.svg" />
                   DMCA
@@ -581,14 +628,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
               </li>
             </ul>
           </div>
-          <ul class="my-24 md:my-0">
+          <ul class="my-24 lg:my-0">
             <li class="font-primary mb-11">
               <a class="font-primary flex" href="melodify.group@gmail.com">
                 <img class="ml-12" src="./img/email.svg" alt="email logo" />
                 melodify.group@gmail.com
               </a>
             </li>
-            <li class="mt-8 md:mt-12">
+            <li class="mt-8 lg:mt-12">
               <a class="font-primary flex" link="#">
                 <img
                   class="ml-12"
@@ -601,38 +648,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
             </li>
           </ul>
         </div>
-        <div class="bg-gray2 block h-1 mt-24 md:mt-62"></div>
-        <span class="font-primary block text-center mt-12 md:mt-20"
+        <div class="bg-gray2 block h-1 mt-24 lg:mt-62"></div>
+        <span class="font-primary block text-center mt-12 lg:mt-20"
           >Copyright © 2023.All Rights Reserved By melodify</span
         >
       </div>
     </footer>
     <!-- /////////////script//////////// -->
-    <!-- <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-    <script type="text/javascript">
-      var splide = new Splide('.splide', {
-        padding: '5rem',
-        perPage: 3,
-        gap: '2rem',
-        breakpoints: {
-          640: {
-            perPage: 2,
-            gap: '.7rem',
-            height: '6rem',
-          },
-          480: {
-            perPage: 1,
-            gap: '.7rem',
-            height: '6rem',
-          },
-        },
-      });
-
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('.splide').mount();
-      });
-    </script> -->
   </body>
 </html>
