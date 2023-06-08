@@ -13,23 +13,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <link href="./style/slider.css" rel="stylesheet" />
     <script src="./js/slider.js"></script>
     <title>Melodify</title>
   </head>
   <body class="text-white bg-black">
     <!-- ////////////header//////// -->
-
     <header class="overflow-hidden">
       <div class="mt-24">
-        <div class="w-full relative h-330 lg:h-681">
+        <div class="w-full relative h-330 md:h-681">
           <img
-            class="z-10 absolute w-full scale-150 lg:h-681 md:scale-90 lg:scale-100"
+            class="z-10 absolute w-full md:h-681"
             src="./img/image_gradiant.png"
           />
-          <img
-            class="absolute scale-150 w-full lg:h-681 md:scale-90 lg:scale-100 z-0"
-            src="./img/header.png"
-          />
+          <img class="absolute w-full lg:h-681 z-0" src="./img/header.png" />
           <div class="z-20 px-36 absolute w-full">
             <img class="m-auto lg:mr-40 w-140" src="./img/logo.png" />
             <div class="mt-20">
@@ -55,8 +52,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     </header>
     <main class="overflow-hidden">
       <div class="relative">
-        <!--////////// slider//////////// -->
-
         <h3
           class="font-primary font-semibold text-18 mb-32 text-center lg:text-30 lg:mb-15"
         >
@@ -66,40 +61,42 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
           <section>
             <div class="relative h-376">
               <img
-                class="absolute -top-48 z-0 right-0 h-394 lg:h-721"
+                class="absolute top-10 z-0 right-0 h-394 lg:h-721 lg:-top-140"
                 src="./img/multi_line.svg"
               />
-              <div class="relative">
-                <img
-                  class="h-291 left-54 absolute lg:left-48 lg:h-406"
-                  src="./img/phoneShape.png"
-                />
-                <div id="main-carousel" class="splide top-12 left-64 lg:top-16">
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <li class="splide__slide">
-                        <img
-                          class="lg:w-394"
-                          src="./img/slide1.png"
-                          alt="Melodify music player"
-                        />
-                      </li>
-                      <li class="splide__slide">
-                        <img
-                          class="lg:w-394"
-                          src="./img/slide2.png"
-                          alt="Melodify music player"
-                        />
-                      </li>
-                      <li class="splide__slide">
-                        <img
-                          class="lg:w-394"
-                          src="./img/slide3.png"
-                          alt="Melodify music player"
-                        />
-                      </li>
-                    </ul>
-                  </div>
+              <img
+                class="w-140 left-[20.1%] absolute lg:right-[29%] lg:w-204"
+                src="./img/phoneShape.png"
+              />
+              <!--////////// slider//////////// -->
+              <div
+                id="main-carousel"
+                class="splide top-[2.5%] left-[23%] lg:top-[4%] lg:left-[51%]"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide1.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide2.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide3.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -127,13 +124,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                 >
                   <img alt="chain logo" src="./img/chain.png" />
                   <span class="font-primary tetx-12 mt-12">لینک مستقیم</span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
                 <div
@@ -143,13 +151,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                   <span class="font-primary text-12 font-semibold mt-12">
                     گوگل پلی استور
                   </span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -173,13 +192,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                   <span class="font-primary text-12 font-semibold mt-12">
                     تلوزیون
                   </span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -207,13 +237,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                   <span class="font-primary text-12 font-semibold mt-12"
                     >مک</span
                   >
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
                 <div
@@ -221,13 +262,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                 >
                   <img src="./img/linux.png" alt="linux os logo" />
                   <span class="font-primary mt-12 text-12">لینوکس</span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
                 <div
@@ -237,13 +289,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                   <span class="font-primary text-12 font-semibold mt-12"
                     >ویندوز</span
                   >
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -265,13 +328,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                 >
                   <img src="./img/apple 2.png" alt="apple company logo" />
                   <span class="font-primary mt-12 text-12">آیفون</span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
                 <div
@@ -281,13 +355,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                   <span class="font-primary text-12 font-semibold mt-12">
                     وب اپلیکیشن
                   </span>
-                  <a class="inline-flex items-baseline m-auto" href="#">
-                    <span
-                      class="font-primary ml-4 font-medium text-10 text-gray7"
+                  <a
+                    class="active:text-yellow hover:text-yellow focus:text-yellow inline-flex font-medium text-10 text-gray7 font-primary items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      دریافت
-                    </span>
-                    <img src="./img/download.png" alt="download logo" />
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -296,7 +381,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
         </div>
         <!--////////////////property list////////////////  -->
         <section>
-          <div>
+          <div class="h-610">
             <div class="mt-72 h-224">
               <img
                 class="absolute left-0 z-0 top-888 lg:h-1172 lg:top-330"
@@ -319,7 +404,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
                 />
               </div>
             </div>
-            <div class="lg:h-full">
+            <div class="absolute lg:top-888 right-[9%] lg:right-[20%]">
               <ul class="text-16 font-semibold mt-28 mx-20 lg:text-18 m-auto">
                 <li class="font-primary flex font-medium mt-24">
                   <img class="ml-8" src="./img/block.svg" alt="block" />
@@ -351,7 +436,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
           </div>
         </section>
         <!-- /////////////web app property///////////// -->
-        <section class="mt-80 relative z-0">
+        <section class="relative z-0">
           <h3
             class="font-primary text-center font-semibold text-16 mb-16 lg:text-30"
           >
@@ -455,47 +540,108 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
               <span class="font-primary mr-12 font-semibold text-18 lg:mr-24">
                 1.7 M
               </span>
-              <!--//////////// comment card /////////-->
-              <div class="mt-32 mb-80">
-                <div
-                  class="flex gap-12 items-start m-auto w-330 bg-primary relative rounded-7 p-16 border-1 border-x-gray1 lg:w-604 lg:gap-24"
-                >
-                  <img
-                    class="absolute left-24 -top-11 lg:w-32"
-                    src="./img/quote.png"
-                    alt="quote shape"
-                  />
-                  <div class="">
-                    <img
-                      class="w-376"
-                      src="./img/person.png"
-                      alt="user image"
-                    />
-                  </div>
-                  <div class="flex justify-center flex-col items-start">
-                    <span
-                      class="font-primary text-14 font-semibold text-yellow lg:text-18"
-                    >
-                      Reza Abolhasani:
-                    </span>
-                    <p
-                      class="font-primary text-gray7 text-14 text-justify leading-7 mt-6 lg:text-16"
-                    >
-                      با سلام و تشکر از برنامه خوب تون. به نظر من برنامه خیلی
-                      خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که پشیمان نمی
-                      شوید. باتشکر از کسانی که برای این برنامه زحمات زیادی
-                      کشیدن.
-                    </p>
-                    <div class="flex mt-11 mb-11">
-                      <img src="./img/star 1.png" />
-                      <img class="mr-4" src="./img/star 5.png" />
-                      <img class="mr-4" src="./img/star 5.png" />
-                      <img class="mr-4" src="./img/star 5.png" />
-                      <img class="mr-4" src="./img/star 5.png" />
-                      <span class="font-primary font-semibold text-18 mr-12"
-                        >4.5</span
-                      >
-                    </div>
+              <!--//////////// comment slider /////////-->
+              <div>
+                <div id="comment-carousel" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="mt-32 mb-80">
+                          <div
+                            class="flex gap-12 items-start m-auto w-330 bg-primary relative rounded-7 p-16 border-1 border-x-gray1 lg:w-604 lg:gap-24"
+                          >
+                            <img
+                              class="absolute left-24 -top-11 lg:w-32"
+                              src="./img/quote.png"
+                              alt="quote shape"
+                            />
+                            <div>
+                              <img
+                                class="w-376"
+                                src="./img/person.png"
+                                alt="user image"
+                              />
+                            </div>
+                            <div
+                              class="flex justify-center flex-col items-start"
+                            >
+                              <span
+                                class="font-primary text-14 font-semibold text-yellow lg:text-18"
+                              >
+                                Reza Abolhasani:
+                              </span>
+                              <p
+                                class="font-primary text-gray7 text-14 text-justify leading-7 mt-6 lg:text-16"
+                              >
+                                با سلام و تشکر از برنامه خوب تون. به نظر من
+                                برنامه خیلی خوب و حتی میشه گفت بهترین. حتماً
+                                دانلود کنید که پشیمان نمی شوید. باتشکر از کسانی
+                                که برای این برنامه زحمات زیادی کشیدن.
+                              </p>
+                              <div class="flex mt-11 mb-11">
+                                <img src="./img/star 1.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <span
+                                  class="font-primary font-semibold text-18 mr-12"
+                                  >4.5</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="mt-32 mb-80">
+                          <div
+                            class="flex gap-12 items-start m-auto w-330 bg-primary relative rounded-7 p-16 border-1 border-x-gray1 lg:w-604 lg:gap-24"
+                          >
+                            <img
+                              class="absolute left-24 -top-11 lg:w-32"
+                              src="./img/quote.png"
+                              alt="quote shape"
+                            />
+                            <div>
+                              <img
+                                class="w-376"
+                                src="./img/person2.png"
+                                alt="user image"
+                              />
+                            </div>
+                            <div
+                              class="flex justify-center flex-col items-start"
+                            >
+                              <span
+                                class="font-primary text-14 font-semibold text-yellow lg:text-18"
+                              >
+                                sara Abolhasani:
+                              </span>
+                              <p
+                                class="font-primary text-gray7 text-14 text-justify leading-7 mt-6 lg:text-16"
+                              >
+                                با سلام و تشکر از برنامه خوب تون. به نظر من
+                                برنامه خیلی خوب و حتی میشه گفت بهترین. حتماً
+                                دانلود کنید که پشیمان نمی شوید. باتشکر از کسانی
+                                که برای این برنامه زحمات زیادی کشیدن.
+                              </p>
+                              <div class="flex mt-11 mb-11">
+                                <img src="./img/star 1.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <img class="mr-4" src="./img/star 5.png" />
+                                <span
+                                  class="font-primary font-semibold text-18 mr-12"
+                                  >4.5</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -506,11 +652,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     </main>
     <!-- ////////////////footer//////////// -->
     <footer>
-      <div class="text-white bg-gray4 pt-24">
-        <div
-          class="lg:flex lg:items-start lg:mt-56 lg:justify-center flex-wrap"
-        >
-          <div class="flex justify-center items-center flex-col lg:items-start">
+      <div class="text-white bg-gray4 p-24 lg:px-102">
+        <div class="lg:flex lg:items-start lg:mt-32 flex-wrap">
+          <div
+            class="flex lg:basis-1/4 justify-center items-center flex-col lg:items-start"
+          >
             <img
               class="w-140 lg:w-185"
               src="./img/logo.png"
@@ -524,18 +670,26 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
             </h3>
           </div>
           <div
-            class="flex flex-wrap start mt-32 lg:flex-nowrap lg:gap-64 lg:mt-0"
+            class="flex flex-wrap start mt-32 lg:flex-nowrap lg:gap-64 lg:mt-0 lg:basis-2/4"
           >
-            <ul>
-              <li class="mt-8 lg:mt-12">
+            <ul class="font-medium">
+              <li class="mt-8 lg:mt-0">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img
-                    class="ml-6 fill-YELLOW active:fill-YELLOW hover:fill-YELLOW focus:fill-YELLOW inline-flex"
-                    src="img/arrow.svg"
-                  />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   گوگل پلی استور
                 </a>
               </li>
@@ -543,92 +697,191 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   آیفون
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   ویندوز
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   لینوکس
                 </a>
               </li>
             </ul>
 
-            <ul class="mr-64 lg:mr-0">
-              <li class="mt-8 lg:mt-12">
+            <ul class="mr-64 font-medium lg:mr-0">
+              <li class="mt-8 lg:mt-0">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   دانلود مستقیم
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   تلوزیون هوشمند
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   مک
                 </a>
               </li>
             </ul>
-            <ul class="my-24 grow lg:grow-0 lg:my-0">
-              <li class="mt-8 lg:mt-12">
+            <ul class="my-24 basis-full font-medium lg:basis-1/3 lg:my-0">
+              <li class="mt-8 lg:mt-0">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   قوانین و شرایط استفاده
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   حریم خصوصی
                 </a>
               </li>
               <li class="mt-8 lg:mt-12">
                 <a
                   href="#"
-                  class="font-primary text-14 active:text-YELLOW hover:text-YELLOW focus:text-YELLOW inline-flex lg:text-16"
+                  class="font-primary items-center inline-flex text-14 active:text-yellow hover:text-yellow focus:text-yellow lg:text-16"
                 >
-                  <img class="ml-6" src="img/arrow.svg" />
+                  <svg
+                    class="active:text-yellow hover:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   DMCA
                 </a>
               </li>
             </ul>
           </div>
-          <ul class="my-24 lg:my-0">
+          <ul class="my-24 lg:basis-1/4 font-medium lg:my-0">
             <li class="font-primary mb-11">
               <a class="font-primary flex" href="melodify.group@gmail.com">
                 <img class="ml-12" src="./img/email.svg" alt="email logo" />
@@ -648,12 +901,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
             </li>
           </ul>
         </div>
-        <div class="bg-gray2 block h-1 mt-24 lg:mt-62"></div>
-        <span class="font-primary block text-center mt-12 lg:mt-20"
-          >Copyright © 2023.All Rights Reserved By melodify</span
-        >
+        <div class="bg-gray2 m-auto block h-1 mt-24 lg:mt-62"></div>
+        <p class="font-primary block text-center mt-12 lg:mt-20">
+          Copyright © 2023.All Rights Reserved By melodify
+        </p>
       </div>
     </footer>
-    <!-- /////////////script//////////// -->
   </body>
 </html>
