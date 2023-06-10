@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-    const splide = new Splide('#comment-carousel', {
+    const splide = new Splide('.comment-carousel', {
         type: 'loop',
         focus: 1,
-        autoplay: true,
+        // autoplay: true,
         drag: true,
         gap: ".5rem",
         pauseOnHover: false,
