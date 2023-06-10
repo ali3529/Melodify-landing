@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         pauseOnFocus: false,
         direction: 'rtl',
         focus: 'center',
-        perPage: 3,
+        // perPage: 3,
         breakpoints: {
 
             1024: {
                 height: "17.3rem",
                 gap: 20,
-                perPage: 3,
+                perPage: 1,
 
             },
 
@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
         focus: 'center',
         speed: 0,
         // rewindSpeed: 0,
-        // drag: true,
+        drag: true,
         gap: 24,
         // pauseOnHover: false,
-        // arrows: false,
+        arrows: false,
         // pauseOnFocus: false,
         direction: 'rtl',
         paginationDirection: 'rtl',
@@ -57,11 +57,16 @@ document.addEventListener('DOMContentLoaded', function () {
         //         // height: 500,
 
         //     }
-        classes: {
-            page: "splide__pagination__page--custome",
-        }
-    })
-    commentSlider.mount()
 
+    })
+
+    commentSlider.on('pagination:mounted', function (data) {
+        // You can add your class to the UL element
+        data.list.classList.add('splide__pagination__page--custome');
+
+        // `items` contains all dot items
+
+    });
+    commentSlider.mount()
 })
 

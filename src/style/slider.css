@@ -1,14 +1,18 @@
-.splide__pagination__page--custome {
+.splide__pagination__page--custome button {
   background-color: #a7a7a9;
   width: 0.5625rem;
-  height: 0.312rem;
-  border-radius: 5rem;
+  height: 0.3125rem;
+  border-radius: 6.25rem;
   margin: 0.312rem;
+}
+.splide__pagination__page--custome .is-active {
+  background-color: #f2c94c !important;
+  width: 1.5rem;
+  height: 0.3125rem;
 }
 @media (min-width: 1024px) {
   .comment-carousel .is-active .splide__slide__container {
     width: 604px !important;
-
     padding: 32px;
     height: 217px !important;
     background-color: red;
