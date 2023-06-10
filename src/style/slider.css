@@ -9,9 +9,8 @@
   .comment-carousel .is-active .splide__slide__container {
     width: 604px !important;
 
-    /* padding: 32px;
-    height: 217px !important; */
-    /* scale: 1.5; */
+    padding: 32px;
+    height: 217px !important;
     background-color: red;
   }
   .comment-carousel .is-active .splide__slide__container h3 {
