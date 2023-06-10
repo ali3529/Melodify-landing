@@ -3,10 +3,11 @@
 @tailwind utilities;
 @font-face {
   font-family: Dana;
-  src: url('Dana_Variable.ttf');
+  src: url('dana-regular.woff');
 }
-.fa-num {
-  font-variation-settings: 'wght' 200, 'FANU' 0;
+@font-face {
+  font-family: farsiNum;
+  src: url('dana-fanum-regular.woff');
 }
 /* * {
   outline: 1px solid #f00 !important;

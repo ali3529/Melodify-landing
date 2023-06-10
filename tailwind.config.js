@@ -46,6 +46,7 @@ module.exports = {
       "234": "14.625rem",
       "414": "25.87rem",
       "450": "28.125rem",
+      "505": "31.5rem",
       "604": "37.75rem",
       "610": "38.125rem",
       "681": "42.5rem",
@@ -56,7 +57,7 @@ module.exports = {
       "1172": "73.25rem"
     },
     colors: {
-      "black": "#0B0B0D",
+      "main1": "#0B0B0D",
       "primary": "#242429",
       "gray1": "#303036",
       "gray2": "#3F3F3F",
@@ -78,7 +79,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        primary: "Dana"
+        primary: "Dana",
+        faNum: "farsiNum"
       },
       fontSize: {
         "32": "2rem",
