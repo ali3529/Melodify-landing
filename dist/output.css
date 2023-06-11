@@ -654,6 +654,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.mr-1 {
+  margin-right: .063rem;
+}
+
 .mr-11 {
   margin-right: .687rem;
 }
@@ -702,10 +706,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-6 {
-  margin-top: .375rem;
-}
-
 .mt-72 {
   margin-top: 4.5rem;
 }
@@ -716,6 +716,10 @@ video {
 
 .mt-80 {
   margin-top: 5rem;
+}
+
+.ml-16 {
+  margin-left: 1rem;
 }
 
 .block {
@@ -750,8 +754,8 @@ video {
   height: 6.375rem;
 }
 
-.h-16 {
-  height: 1rem;
+.h-12 {
+  height: 0.75rem;
 }
 
 .h-224 {
@@ -790,6 +794,10 @@ video {
   width: 6.375rem;
 }
 
+.w-12 {
+  width: 0.75rem;
+}
+
 .w-140 {
   width: 8.75rem;
 }
@@ -826,6 +834,30 @@ video {
   flex-basis: 100%;
 }
 
+.basis-394 {
+  flex-basis: 24.6rem;
+}
+
+.basis-224 {
+  flex-basis: 14rem;
+}
+
+.basis-64 {
+  flex-basis: 4rem;
+}
+
+.basis-2\/6 {
+  flex-basis: 33.333333%;
+}
+
+.basis-4\/6 {
+  flex-basis: 66.666667%;
+}
+
+.basis-3\/6 {
+  flex-basis: 50%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -846,8 +878,16 @@ video {
   align-items: baseline;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.gap-11 {
+  gap: .687rem;
 }
 
 .gap-12 {
@@ -862,10 +902,21 @@ video {
   border-radius: .4375rem;
 }
 
-.border-x-gray1 {
+.rounded-\[1\.25rem\] {
+  border-radius: 1.25rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-gray1 {
   --tw-border-opacity: 1;
-  border-left-color: rgb(48 48 54 / var(--tw-border-opacity));
-  border-right-color: rgb(48 48 54 / var(--tw-border-opacity));
+  border-color: rgb(48 48 54 / var(--tw-border-opacity));
 }
 
 .bg-gray2 {
@@ -963,12 +1014,8 @@ video {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-gray7 {
@@ -989,13 +1036,27 @@ video {
 @font-face {
   font-family: Dana;
 
-  src: url('dana-regular.woff');
+  src: url('dana2webGX.woff');
 }
 
-@font-face {
-  font-family: farsiNum;
+.fa-format-400 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 400, 'FANU' 1;
+}
 
-  src: url('dana-fanum-regular.woff');
+.fa-format-600 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 600, 'FANU' 1;
+}
+
+.fa-format-500 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 500, 'FANU' 1;
+}
+
+.fa-format-700 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 700, 'FANU' 1;
 }
 
 .focus\:text-yellow:focus {
@@ -1133,6 +1194,10 @@ video {
     margin-top: 2rem;
   }
 
+  .lg\:ml-16 {
+    margin-left: 1rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1146,7 +1211,7 @@ video {
   }
 
   .lg\:h-185 {
-    height: 11.56rem;
+    height: 11.375rem;
   }
 
   .lg\:h-450 {
@@ -1174,7 +1239,7 @@ video {
   }
 
   .lg\:w-185 {
-    width: 11.56rem;
+    width: 11.375rem;
   }
 
   .lg\:w-194 {
@@ -1245,8 +1310,16 @@ video {
     gap: 4rem;
   }
 
+  .lg\:gap-16 {
+    gap: 1rem;
+  }
+
   .lg\:break-words {
     overflow-wrap: break-word;
+  }
+
+  .lg\:p-28 {
+    padding: 1.75rem;
   }
 
   .lg\:px-102 {
@@ -1259,17 +1332,16 @@ video {
     padding-right: 8.75rem;
   }
 
-  .lg\:px-28 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-  }
-
   .lg\:text-center {
     text-align: center;
   }
 
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-14 {
+    font-size: 0.87rem;
   }
 
   .lg\:text-16 {

@@ -4,16 +4,18 @@
   height: 0.3125rem;
   border-radius: 6.25rem;
   margin: 0.312rem;
+  opacity: 1 !important;
 }
 .splide__pagination__page--custome {
   bottom: -1rem;
 }
 .splide__pagination__page--custome .is-active {
   background-color: #f2c94c !important;
+  opacity: 1 !important;
   width: 1.5rem;
   height: 0.3125rem;
 }
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .comment-carousel .is-active .splide__slide__container {
     width: 604px !important;
     padding: 32px;
@@ -29,7 +31,7 @@
     height: 80px;
     width: 80px;
   }
-}
+} */
 /* .splide__list {
   justify-content: center;
   align-items: center;

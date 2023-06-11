@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slide = new Splide('#main-carousel', {
+        autoScroll: {
+            speed: 5,
+        },
         height: "24.6rem",
-        width: 460,
+        // width: 460,
         type: 'loop',
         focus: 1,
         // autoWidth: true,
-        gap: 50,
+        gap: 35,
         autoplay: true,
         drag: true,
         pauseOnHover: false,
@@ -33,14 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const commentSlider = new Splide('.comment-carousel', {
+        autoScroll: {
+            speed: 5,
+        },
         type: 'loop',
         autoplay: true,
+        drag: true,
         // padding: 20,
-        rewind: true,
+        // rewind: true,
         // height: 500,
         autoWidth: true,
         focus: 'center',
-        speed: 0,
+        // speed: 0,
         // rewindSpeed: 0,
         drag: true,
         gap: 24,
@@ -49,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // pauseOnFocus: false,
         direction: 'rtl',
         paginationDirection: 'rtl',
-        // perPage: 3,
+        perPage: 3,
+        perMove: 1,
         breakpoints: {
             1024: {
                 gap: "1rem",

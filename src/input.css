@@ -3,9 +3,22 @@
 @tailwind utilities;
 @font-face {
   font-family: Dana;
-  src: url('dana-regular.woff');
+  src: url('dana2webGX.woff');
 }
-@font-face {
-  font-family: farsiNum;
-  src: url('dana-fanum-regular.woff');
+
+.fa-format-400 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 400, 'FANU' 1;
+}
+.fa-format-600 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 600, 'FANU' 1;
+}
+.fa-format-500 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 500, 'FANU' 1;
+}
+.fa-format-700 {
+  font-family: 'Dana';
+  font-variation-settings: 'wght' 700, 'FANU' 1;
 }
