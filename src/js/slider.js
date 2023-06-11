@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         pauseOnFocus: false,
         direction: 'rtl',
         focus: 'center',
-        // perPage: 3,
+        perPage: 3,
         breakpoints: {
 
             1024: {
                 height: "17.3rem",
                 gap: 20,
-                perPage: 1,
+                perPage: 3,
 
             },
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const commentSlider = new Splide('.comment-carousel', {
         type: 'loop',
         autoplay: true,
-        // padding: 400,
+        // padding: 20,
         rewind: true,
         // height: 500,
         autoWidth: true,
@@ -50,21 +50,18 @@ document.addEventListener('DOMContentLoaded', function () {
         direction: 'rtl',
         paginationDirection: 'rtl',
         // perPage: 3,
-        // breakpoints: {
-        //     1024: {
-        //         // gap: "1rem",
-        //         // perPage: 1,
-        //         // height: 500,
+        breakpoints: {
+            1024: {
+                gap: "1rem",
+                perPage: 1,
 
-        //     }
+            }
+        }
 
     })
 
     commentSlider.on('pagination:mounted', function (data) {
-        // You can add your class to the UL element
         data.list.classList.add('splide__pagination__page--custome');
-
-        // `items` contains all dot items
 
     });
     commentSlider.mount()
