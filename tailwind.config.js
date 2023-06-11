@@ -78,9 +78,9 @@ module.exports = {
       "7": ".4375rem"
     },
     extend: {
-      screens: {
-        'lg': "1150px"
-      },
+      // screens: {
+      //   'lg': "1150px"
+      // },
       fontFamily: {
         primary: "Dana",
         faNum: "farsiNum"
