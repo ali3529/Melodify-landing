@@ -15,7 +15,8 @@
     <script src="./js/slider.js"></script>
     <title>Melodify</title>
   </head>
-  <body class="text-white bg-black h-screen">
+
+  <body class="text-white bg-black overflow-x-hidden ">
     <!-- ANCHOR HEADER -->
     <header
       class="overflow-hiddenw-full relative h-[330px] md:h-[911px] bg-cover bg-no-repeat bg-center bg-header-image"
@@ -53,187 +54,96 @@
     </header>
 
     <!-- ANCHOR MAIN -->
-    <main>
+    <main class="h-full w-full overflow-x-hidden overflow-y-visible">
       <!-- ANCHOR PLATFORM SECTION -->
-      <section class="flex flex-col mt-[103px] md:-mt-[121px] z-40 relative">
+      <section
+        class="flex flex-col mt-[103px] md:-mt-[121px] z-40 relative h-[834px]"
+      >
         <h3
           class="font-dana font-medium text-lg md:text-[30px] text-white mx-auto"
         >
           در همه پلتفرم ها
         </h3>
         <div class="grid grid-cols-1 pe-14 md:pe-36 md:grid-cols-2 gap-4">
-          <!-- <div
-          class="w-full z-20 flex flex-row justify-center items-center  relative">
+          <div>111111111111111</div>
+          <div>222222222222</div>
+        </div>
+      </section>
+      <!-- ANCHOR melodifay option  SECTION -->
+      <section class="   mt-[102px] mb-[183px] ">
+
+        <!-- <div class=""> -->
+       
+          <img
+            class="absolute left-[28px]  "
+            src="/src/assets/common/yellow_hover.svg"
+            alt=""
+          />
+          <!-- class="absolute -z-10 -left-[50%] -bottom-[368px] min-[500px]:-bottom-[450px] md:-left-[40%] sm:-bottom-[530px]  md:-bottom-[600px] min-[1260px]:-bottom-[710px] md:w-[90%]" -->
+          <img
+          class="absolute left-0 "
+            src="/src/assets/common/yellow_lines.svg"
+            alt=""
+          />
+        <!-- </div> -->
+        <div class="absolute">
           <div
-            class="absolute left-[50%] min-[1000px]:translate-x-[-101%] min-[1300px]:translate-x-[-99%] translate-x-[-50%]">
-          
-            <img  class="w-[179px] h-[358px] md:w-[205px] md:h-[408px] mt-[4px]" src="/src/assets/common/mobile_frame.webp" alt="">
-          </div>
-          <div
-            id="splide"
-            class="splide w-full md:w-[93%] min-[1000px]:w-[80%] mx-auto relative max-w-[800px]"
-            aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide flex items-center justify-center">
-             
-                  <img src="/src/assets/landing/artist-slide.webp" alt="">
-                </li>
-                <li class="splide__slide flex items-center justify-center">
-                  <img src="/src/assets/landing/artist-slide.webp" alt="">
-
-                </li>
-                <li class="splide__slide flex items-center justify-center">
-                  <img src="/src/assets/landing/artist-slide.webp" alt="">
-
-                </li>
-                <li class="splide__slide flex items-center justify-center">
-                  <img src="/src/assets/landing/artist-slide.webp" alt="">
-
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
-
-          <!-- exact -->
-
-          <div dir="ltr" class="relative flex w-full ">
-            <div class="max-[768px]:-left-[1.29%] max-[830px]:left-[13.8%]  max-[930px]:left-[18%] max-[1330px]:left-[24.1%] min-[2500px]:-left-[0.7%] min-[4000px]:-left-[0.4%] -top-[2.5%] absolute z-10  h-[420px]">
-              <picture >
-                <source
-                  srcset="/src/assets/landing/mobile_frame.webp"
-                  media="(min-width:768px)"
+            class="grid grid-cols-1 md:grid-cols-10 grid-rows-1 md:ps-[135px] ps-[42px] gap-4"
+          >
+            <div
+              class="md:col-span-8 md:col-start-3 lg:col-span-5 lg:col-start-6 md:order-last w-full overflow-hidden ps-[20px] md:ps-0"
+            >
+              <div
+                class="min-w-[130%] border-[8px] border-solid border-[#000] bg-[#3C3737] flex p-[6px]"
+              >
+                <img
+                  class="w-full object-fill object-center"
+                  src="/src/assets/landing/desktop_baner.webp"
+                  alt=""
                 />
-                <img class="h-full me-36"src="/src/assets/landing/mobile_frame_sm.webp" alt="" />
-              </picture>
+              </div>
             </div>
-            <div id="main-carousel" class="splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide h-[401.929px] overflow-hidden ">
-                    <picture>
-                      <source
-                        srcset="/src/assets/landing/artist_slide.webp"
-                        media="(min-width:768px)"
-                      />
-                      <img
-                        class="h-full rounded-3xl"
-                        src="/src/assets/landing/artist_slide_sm.webp"
-                        alt=""
-                      />
-                    </picture>
+            <div class="md:col-span-2 lg:col-span-5 md:order-first">
+              <div
+                class="flex flex-col md:justify-center md:items-center h-full"
+              >
+                <ul>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های
                   </li>
-                  <li class="splide__slide h-[401.929px] overflow-hidden">
-                    <picture>
-                      <source
-                        srcset="/src/assets/landing/home_slide.webp"
-                        media="(min-width:768px)"
-                      />
-                      <img
-                        class="h-full rounded-3xl"
-                        src="/src/assets/landing/home_slide_sm.webp"
-                        alt=""
-                      />
-                    </picture>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های ایرانی و حارجی
                   </li>
-                  <li class="splide__slide h-[401.929px] overflow-hidden">
-                    <picture>
-                      <source
-                        srcset="/src/assets/landing/music_slide.webp"
-                        media="(min-width:768px)"
-                      />
-                      <img
-                        class="h-full rounded-3xl"
-                        src="/src/assets/landing/music_slide_sm.webp"
-                        alt=""
-                      />
-                    </picture>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های
+                  </li>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های ایرانی و حارجی
+                  </li>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های
+                  </li>
+                  <li
+                    class="before:absolute before:content-[''] before:rounded-[100px] before:h-1 before:w-[12px] before:top-1/2 before:-right-[20px] before:bg-yellow relative"
+                  >
+                    مرجع پخش و دانلود آهنگ های ایرانی و حارجی
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-
-          <!-- <!- gooooooooooooooooooooooooooooooddddddddddddddddddddddddddddd -->
-
-          <!-- <div class="relative pt-[25px] pb-[67.5%] h-0 ">
-
-          <div class="w-full h-[430px] bg-mobile-frame bg-center bg-contain bg-no-repeat pt-[7%] pb[12.8%] px-[38.4%] absolute top-0 left-0">
-          </div>
-          <div
-          id="main-carousel"
-          class="splide"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img
-                  src="./img/slide1.png"
-                  class="h-full"
-                  alt="Melodify music player"
-                />
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="./img/slide2.png"
-                  class="h-full"
-                  alt="Melodify music player"
-                />
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="./img/slide3.png"
-                  class="h-full"
-                  alt="Melodify music player"
-                />
-              </li>
-            </ul>
-          </div>
         </div>
-        </div> -->
-
-          <!-- <!- gooooooooooooooooooooooooooooooddddddddddddddddddddddddddddd
-       
-
-          <!-- <div
-            id="main-carousel"
-            class="splide top-[2.5%] left-[23%] lg:top-[2%] md:left-[21%]"
-          >
-            <div dir="rtl" class="splide__track">
-              <ul class="splide__list relative pt-[25px] pb-[67.5%] h-0">
-                <li
-                  class="splide__slide overflow-hidden [&.is-active]:bg-mobile-frame [&.is-active]:bg-no-repeat [&.is-active]:bg-contain [&.is-active]:pt-[7%] [&.is-active]:pb[12.8%] [&.is-active]:px-[38.4%] [&.is-active]:top-0 [&.is-active]:left-0"
-                >
-                  <img
-                    src="./img/slide1.png"
-                    class="h-full top-[10px] left-0 -z-[1] absolute "
-                    alt="Melodify music player"
-                  />
-                </li>
-                <li
-                  class="splide__slide overflow-hidden [&.is-active]:bg-mobile-frame [&.is-active]:bg-no-repeat [&.is-active]:bg-contain [&.is-active]:pt-[7%] [&.is-active]:pb[12.8%] [&.is-active]:px-[38.4%] [&.is-active]:top-0 [&.is-active]:left-0"
-                >
-                  <img
-                    src="./img/slide2.png"
-                    class="h-full top-[10px] left-0 -z-[1] absolute"
-                    alt="Melodify music player"
-                  />
-                </li>
-                <li
-                  class="splide__slide overflow-hidden [&.is-active]:bg-mobile-frame [&.is-active]:bg-no-repeat [&.is-active]:bg-contain [&.is-active]:pt-[7%] [&.is-active]:pb[12.8%] [&.is-active]:px-[38.4%] [&.is-active]:top-0 [&.is-active]:left-0"
-                >
-                  <img
-                    src="./img/slide3.png"
-                    class="h-full top-[10px] left-0 -z-[1] absolute"
-                    alt="Melodify music player"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div> -->
-          <div>222222222222</div>
-        </div>
+      
       </section>
     </main>
   </body>
