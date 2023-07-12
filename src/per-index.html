@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+       rel="stylesheet"
+    />
+    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
+    <link href="./style/slider.css" rel="stylesheet" />
+    <script src="./js/slider.js"></script>
+    <title>Melodify</title>
+  </head>
+  <body class="text-white bg-black w-screen h-screen">
+    <!-- ANCHOR HEADER -->
+
+    <!-- <header class="overflow-hidden">
+      <div class="mt-24">
+        <div class="w-full relative h-330 md:h-681">
+          <img
+            class="z-10 absolute w-full md:h-681"
+            src="./img/image_gradiant.png"
+          />
+          <img class="absolute w-full lg:h-681 z-0" src="./img/header.png" />
+          <div class="z-20 px-36 absolute w-full">
+            <img class="m-auto lg:mr-40 w-140" src="./img/logo.png" />
+            <div class="mt-20">
+              <h1
+                class="fa-format-700 text-24 text-white font-bold text-center lg:text-32"
+              >
+                مرجع پخش و دانلود آهنگ های ایرانی و خارجی
+              </h1>
+              <h2
+                class="fa-format-500 text-16 mt-12 text-center text-gray7 fa-format-500 lg:text-24"
+              >
+                مرجع پخش و دانلود آهنگ های ایرانی و خارجی    
+              </h2>
+            </div>
+            <img
+              class="lg:mt-140 mt-40 m-auto lg:w-1172"
+              alt="melodify logo"
+              src="./img/MELODIFY.png"
+            />
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+    <header
+      class="overflow-hiddenw-full relative h-[330px] md:h-[911px] bg-cover bg-no-repeat bg-header-image"
+    >
+      <div class="h-full w-full">
+        <div
+          class="h-full w-full flex items-center justify-center absolute top-0 right-0"
+        >
+          <img
+           
+            src="/src/assets/common/header/melodify_typography.webp "
+          />
+        </div>
+
+        <img
+          class="w-full h-full absolute top-0 right-0"
+          src="/src/assets/common/header/header_overlayer.webp"
+        />
+      </div>
+      <div class="z-20 absolute w-full h-full top-0 right-0 pt-6">
+        <img src="/src/assets/logo/logo.webp" />
+        <!-- <img class="absolute w-full lg:h-681 z-0" src="./img/header.png" /> -->
+        <div class="z-20 px-36 absolute w-full">
+          <!-- <img class="m-auto lg:mr-40 w-140" src="./img/logo.png" /> -->
+          <div class="mt-20">
+            <h1
+              class="fa-format-700 text-24 text-white font-bold text-center lg:text-32"
+            >
+              مرجع پخش و دانلود آهنگ های ایرانی و خارجی
+            </h1>
+            <h2
+              class="fa-format-500 text-16 mt-12 text-center text-gray7 fa-format-500 lg:text-24"
+            >
+              مرجع پخش و دانلود آهنگ های ایرانی و خارجی
+            </h2>
+          </div>
+          <!-- <img
+                class="lg:mt-140 mt-40 m-auto lg:w-1172"
+                alt="melodify logo"
+                src="./img/MELODIFY.png"
+              /> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- ANCHOR MAIN -->
+    <main class="overflow-hidden">
+      <div class="relative">
+        <h3
+          class="font-primar fa-format-600 text-18 mb-32 text-center lg:text-30 lg:mb-15"
+        >
+          در همه پلتفرم ها
+        </h3>
+        <div class="flex flex-col items-center lg:flex-row">
+          <section class="lg:basis-2/12">
+            <div class="relative h-376">
+              <img
+                class="absolute top-10 z-0 right-0 h-394 lg:h-721 lg:-top-140"
+                src="./img/multi_line.svg"
+              />
+              <img
+                class="w-140 left-[20.1%] absolute lg:right-[47%] lg:w-194"
+                src="./img/phoneShape.png"
+              />
+              <!--////////// slider//////////// -->
+              <div
+                id="main-carousel"
+                class="splide top-[2.5%] left-[23%] lg:top-[2%] md:left-[21%]"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide1.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide2.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./img/slide3.png"
+                        class="h-full"
+                        alt="Melodify music player"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- //////////////platform download ////////-->
+          <section class="relative z-50 lg:basis-10/12">
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-235">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primar fa-format-600 text-16 text-center inline lg:text-18"
+                >
+                  اندروید
+                </h3>
+                <img
+                  class="mr-11"
+                  alt="android logo"
+                  src="./img/android 1.png"
+                />
+              </div>
+              <div
+                class="flex justify-center gap-12 items-center py-9 lg:gap-24"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img alt="chain logo" src="./img/chain.png" />
+                  <span class="fa-format-600 tetx-12 mt-12">لینک مستقیم</span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/playstore (2) 1.png" alt="google paly logo" />
+                  <span class="fa-format-400 text-1 fa-format-600 mt-12">
+                    گوگل پلی استور
+                  </span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-339">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primar fa-format-600 text-16 text-center inline lg:text-18"
+                >
+                  تلوزیون
+                </h3>
+                <img class="mr-11" src="./img/tv.png" alt="tv logo" />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img alt="television logo" src="./img/television 1 (1).png" />
+                  <span class="fa-format-400 text-1 fa-format-600 mt-12">
+                    تلوزیون
+                  </span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-234">
+              <div class="flex gap-12 justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primar fa-format-600 text-16 text-center inline lg:text-18"
+                >
+                  دسکتاپ
+                </h3>
+                <img
+                  class="mr-11"
+                  src="./img/monitor .png"
+                  alt="monitor logo"
+                />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/mac.png" alt="mac logo" />
+                  <span class="fa-format-400 text-1 fa-format-600 mt-12"
+                    >مک</span
+                  >
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/linux.png" alt="linux os logo" />
+                  <span class="fa-format-400 mt-12 text-12">لینوکس</span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/window.png" alt="window os logo" />
+                  <span class="fa-format-400 text-1 fa-format-600 mt-12"
+                    >ویندوز</span
+                  >
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-24 lg:mr-140">
+              <div class="flex justify-center items-center lg:ml-40">
+                <h3
+                  class="font-primar fa-format-600 text-16 text-center inline lg:text-18"
+                >
+                  آیفون
+                </h3>
+                <img class="mr-11" src="./img/apple.png" alt="apple logo" />
+              </div>
+              <div
+                class="flex gap-12 lg:gap-24 justify-center items-center py-9"
+              >
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/apple 2.png" alt="apple company logo" />
+                  <span class="fa-format-400 mt-12 text-12">آیفون</span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex-col w-102 h-102 lg:w-140 bg-primary lg:h-140 flex justify-center items-center rounded-7 py-12 lg:mx-12"
+                >
+                  <img src="./img/waplication.png" alt="web app logo" />
+                  <span class="fa-format-400 text-1 fa-format-600 mt-12">
+                    وب اپلیکیشن
+                  </span>
+                  <a
+                    class="active:text-yellow focus:text-yellow inline-flex fa-format-500 text-10 text-gray7 items-baseline m-auto"
+                    href="#"
+                  >
+                    دریافت
+                    <svg
+                      class="mr-4"
+                      width="11"
+                      height="10"
+                      viewBox="0 0 11 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--////////////////property list////////////////  -->
+        <section>
+          <div class="h-610">
+            <div class="mt-72 !h-224 re">
+              <img
+                class="absolute left-0 z-0 top-888 lg:h-1172 lg:top-330"
+                src="./img/lines.svg"
+              />
+              <div class="relative h-224 md:h-300 lg:h-450">
+                <img
+                  class="absolute bottom-0 z-20 -left-1/4 md:-bottom-140 lg:bottom-40 lg:left-72"
+                  src="./img/golden_light_right.svg"
+                />
+                <img
+                  class="absolute z-20 -left-1/4 top-0 md:-top-140 lg:bottom-110 lg:left-72"
+                  src="./img/golden_light_left.svg"
+                />
+
+                <img
+                  src="./img/Plyer 2.png"
+                  class="absolute -left-80 z-30 lg:-left-64 h-full"
+                  alt=" music player image"
+                />
+              </div>
+            </div>
+            <div class="absolute lg:top-888 right-[9%] md: lg:right-[5%]">
+              <ul class="text-1 fa-format-600 mt-28 mx-20 lg:text-18 m-auto">
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+
+                  مرجع پخش و دانلود آهنگ های
+                </li>
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های ایرانی وخارجی
+                </li>
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود
+                </li>
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های ایرانی وخارجی
+                </li>
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود آهنگ های
+                </li>
+                <li class="flex fa-format-500 mt-24">
+                  <img class="ml-8" src="./img/block.svg" alt="block" />
+                  مرجع پخش و دانلود
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- /////////////web app property///////////// -->
+        <section class="relative z-0">
+          <h3 class="text-cente fa-format-600 text-16 mb-16 lg:text-30">
+            ویژگی ها
+          </h3>
+          <div
+            class="flex justify-center flex-col items-center lg:flex-row lg:px-140 lg:justify-between"
+          >
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/music-note 1.png"
+                alt="music notes"
+              />
+              <p
+                class="fa-format-500 mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                +2000 مجموعه ی متفاوت با به روزرسانی روزانه
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/tv-screen 1.png"
+                alt="tv screen logo"
+              />
+              <p
+                class="fa-format-500 mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان استفاده در پلتفرم های مختلف
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/offline 1.png"
+                alt="no wifi logo"
+              />
+              <p
+                class="fa-format-500 mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان پخش موزیک به صورت آنلاین و افلاین
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/save-file.png"
+                alt="download logo"
+              />
+
+              <p
+                class="fa-format-500 mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                انتخاب فولدر بندی و دانلود آسان
+              </p>
+            </div>
+            <div class="mt-28 lg:w-194">
+              <img
+                class="m-auto w-40 h-40 lg:w-64 lg:h-64"
+                src="./img/playlist (3) 1.png"
+                alt="play list logo"
+              />
+              <p
+                class="fa-format-500 mt-11 lg:text-center text-16 lg:text-18 lg:break-words"
+              >
+                امکان ساخت پلی لیست های شخصی
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- //////////user comments/////////// -->
+        <section>
+          <div class="mt-80">
+            <h3 class="fa-format-600 text-18 text-center lg:text-30">
+              دیدگاه کاربران
+            </h3>
+            <div class="flex justify-center mt-32">
+              <p
+                class="fa-format-500 text-end text-16 lg:text-18 inline-flex items-center"
+              >
+                امتیاز در Playstore :
+              </p>
+              <div class="flex mr-12">
+                <img class="lg:w-20 lg:h20" src="./img/star 1.png" />
+                <img class="mr-4 w-16 lg:w-20 lg:h20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20 lg:h20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20 lg:h20" src="./img/star 5.png" />
+                <img class="mr-4 w-16 lg:w-20 lg:h20" src="./img/star 5.png" />
+                <p
+                  class="font-faNu fa-format-600 text-18 mr-16 text-center lg:text-20"
+                >
+                  4.9
+                </p>
+              </div>
+            </div>
+            <div class="mt-11 text-center">
+              <span class="fa-format-400 text-18 fa-format-500"
+                >تعداد نصب:</span
+              >
+              <span class="mr-1 fa-format-600 text-18 lg:text-20 lg:mr-24">
+                1.7
+              </span>
+              <span class="fa-format-600"> M </span>
+            </div>
+            <!--//////////// comment slider /////////-->
+            <div class="relative mt-32 mb-80 lg:mb-185 lg:mt-56 lg:pb-40">
+              <div class="comment-carousel splide items-center">
+                <div class="splide__track">
+                  <ul class="splide__list items-center">
+                    <li class="splide__slide">
+                      <div
+                        class="splide__slide__container flex h-224 items-start w-330 bg-primary relative border-solid border-gray1 border-2 p-16 rounded-[1.25rem] lg:w-505 lg:p-28 lg:!pt-13 lg:h-185 my-28"
+                      >
+                        <img
+                          class="absolute left-24 -top-11 lg:w-32"
+                          src="./img/quote.png"
+                          alt="quote shape"
+                        />
+                        <div class="basis-1/6 ml-12 lg:ml-16">
+                          <img
+                            class="w-64 m-auto h-64 user-image"
+                            src="./img/person2.png"
+                            alt="user image"
+                          />
+                        </div>
+                        <div
+                          class="flex gap-11 justify-start flex-col basis-5/6 items-start"
+                        >
+                          <h3
+                            class="text-14 fa-format-600 text-yellow lg:text-18 lg:text-white"
+                          >
+                            sara Abolhasani:
+                          </h3>
+                          <p
+                            class="text-gray7 fa-format-400 text-12 text-justify leading-6 lg:text-14 lg:mt-10"
+                          >
+                            با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
+                            خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
+                            پشیمان نمی شوید. باتشکر از کسانی که برای این برنامه
+                            زحمات زیادی کشیدن.
+                          </p>
+                          <div class="flex">
+                            <img class="w-12 h-12" src="./img/star 1.png" />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <span class="font-faNu fa-format-600 text-14 mr-12"
+                              >4.5</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="splide__slide">
+                      <div
+                        class="splide__slide__container flex h-224 items-start w-330 bg-primary relative border-solid border-gray1 border-2 p-16 rounded-[1.25rem] lg:w-505 lg:p-28 lg:!pt-13 lg:h-185 my-28"
+                      >
+                        <img
+                          class="absolute z-40 left-24 -top-11 lg:w-32"
+                          src="./img/quote.png"
+                          alt="quote shape"
+                        />
+                        <div class="basis-1/6 ml-12 lg:ml-16">
+                          <img
+                            class="w-64 m-auto h-64 user-image"
+                            src="./img/person.png"
+                            alt="user image"
+                          />
+                        </div>
+                        <div
+                          class="flex gap-11 justify-start flex-col basis-5/6 items-start"
+                        >
+                          <h3
+                            class="text-14 fa-format-600 text-yellow lg:text-18 lg:text-white"
+                          >
+                            Reza Abolhasani:
+                          </h3>
+                          <p
+                            class="text-gray7 fa-format-400 text-12 text-justify leading-6 lg:text-14 lg:mt-10"
+                          >
+                            با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
+                            خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
+                            پشیمان نمی شوید. باتشکر از کسانی که برای این برنامه
+                            زحمات زیادی کشیدن.
+                          </p>
+                          <div class="flex">
+                            <img class="w-12 h-12" src="./img/star 1.png" />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <span class="font-faNu fa-format-600 text-14 mr-12"
+                              >4.5</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div
+                        class="splide__slide__container flex h-224 items-start w-330 bg-primary relative border-solid border-gray1 border-2 p-16 rounded-[1.25rem] lg:w-505 lg:p-28 lg:!pt-13 lg:h-185 my-28"
+                      >
+                        <img
+                          class="absolute z-40 left-24 -top-11 lg:w-32"
+                          src="./img/quote.png"
+                          alt="quote shape"
+                        />
+                        <div class="basis-1/6 ml-12 lg:ml-16">
+                          <img
+                            class="w-64 m-auto h-64 user-image"
+                            src="./img/person.png"
+                            alt="user image"
+                          />
+                        </div>
+                        <div
+                          class="flex gap-11 justify-start flex-col basis-5/6 items-start"
+                        >
+                          <h3
+                            class="text-14 fa-format-600 text-yellow lg:text-18 lg:text-white"
+                          >
+                            Reza Abolhasani:
+                          </h3>
+                          <p
+                            class="text-gray7 fa-format-400 text-12 text-justify leading-6 lg:text-14 lg:mt-10"
+                          >
+                            با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
+                            خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
+                            پشیمان نمی شوید. باتشکر از کسانی که برای این برنامه
+                            زحمات زیادی کشیدن.
+                          </p>
+                          <div class="flex">
+                            <img class="w-12 h-12" src="./img/star 1.png" />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <img
+                              class="mr-4 w-12 h-12"
+                              src="./img/star 5.png"
+                            />
+                            <span class="font-faNu fa-format-600 text-14 mr-12"
+                              >4.5</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ANCHOR FOOTER -->
+    <footer>
+      <div class="text-white bg-gray4 p-24 lg:px-102">
+        <div class="lg:flex lg:items-start lg:mt-32 flex-wrap">
+          <div
+            class="flex lg:basis-1/4 justify-center items-center flex-col lg:items-start"
+          >
+            <img
+              class="w-140 lg:w-185"
+              src="./img/logo.png"
+              alt="Melodify logo"
+            />
+            <h3
+              class="fa-format-400 wra text-14 mt-28 lg:mt-16 text-center lg:w-300 lg:text-start"
+            >
+              آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با
+              ملودیفای تجربه کنید!
+            </h3>
+          </div>
+          <div
+            class="flex flex-wrap start mt-32 lg:flex-nowrap lg:gap-64 lg:mt-0 lg:basis-2/4"
+          >
+            <ul class="fa-format-500">
+              <li class="mt-8 lg:mt-0">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  گوگل پلی استور
+                </a>
+              </li>
+
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  آیفون
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  ویندوز
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  لینوکس
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mr-64 fa-format-500 lg:mr-0">
+              <li class="mt-8 lg:mt-0">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  دانلود مستقیم
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  تلوزیون هوشمند
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  مک
+                </a>
+              </li>
+            </ul>
+            <ul class="my-24 basis-full fa-format-500 lg:basis-1/3 lg:my-0">
+              <li class="mt-8 lg:mt-0">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  قوانین و شرایط استفاده
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  حریم خصوصی
+                </a>
+              </li>
+              <li class="mt-8 lg:mt-12">
+                <a
+                  href="#"
+                  class="fa-format-400 items-center inline-flex text-14 active:text-yellow focus:text-yellow lg:text-16"
+                >
+                  <svg
+                    class="active:text-yellow focus:text-yellow ml-6"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.000650664 4.99998C0.000650672 4.82076 0.070678 4.64156 0.210439 4.50493L4.61062 0.205142C4.89053 -0.0683806 5.34435 -0.0683806 5.62414 0.205142C5.90393 0.478554 5.90393 0.921935 5.62414 1.19548L1.73061 4.99998L5.624 8.80451C5.9038 9.07803 5.9038 9.52137 5.624 9.79476C5.34421 10.0684 4.89039 10.0684 4.61048 9.79476L0.210303 5.49504C0.0705192 5.35834 0.000650656 5.17914 0.000650664 4.99998Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  DMCA
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="my-24 lg:basis-1/4 fa-format-500 lg:my-0">
+            <li class="fa-format-400 mb-11">
+              <a class="fa-format-400 flex" href="melodify.group@gmail.com">
+                <img class="ml-12" src="./img/email.svg" alt="email logo" />
+                melodify.group@gmail.com
+              </a>
+            </li>
+            <li class="mt-8 lg:mt-12">
+              <a class="fa-format-400 flex" link="#">
+                <img
+                  class="ml-12"
+                  src="./img/Instagram.svg"
+                  alt="inistageram logo"
+                />
+
+                @melodify.official
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gray2 m-auto block h-1 mt-24 lg:mt-62"></div>
+        <p class="fa-format-400 block text-center mt-12 lg:mt-20">
+          Copyright © 2023.All Rights Reserved By melodify
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
