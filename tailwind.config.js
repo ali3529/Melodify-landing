@@ -109,6 +109,10 @@ module.exports = {
         lines: "url('/src/img/lines.svg')",
         "mobile-frame":"url('/src/assets/common/mobile_frame.webp')",
       },
+      listStyleImage: {
+        chevronLeft: 'url("/src/assets/common/footer/ChevronLeft.svg")',
+        chevronLeftYellow: 'url("/src/assets/common/footer/chevronLeftYellow.svg")',
+      },
     },
   },
   plugins: [],
