@@ -160,42 +160,106 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const commentSlider = new Splide('.comment-carousel', {
-        autoScroll: {
-            speed: 5,
-        },
-        type: 'loop',
-        autoplay: true,
-        drag: true,
-        // padding: 20,
-        // rewind: true,
-        // height: 500,
-        autoWidth: true,
-        focus: 'center',
-        // speed: 0,
-        // rewindSpeed: 0,
-        drag: true,
-        gap: 24,
-        // pauseOnHover: false,
-        arrows: false,
-        // pauseOnFocus: false,
-        direction: 'rtl',
-        paginationDirection: 'rtl',
-        perPage: 3,
-        perMove: 1,
-        breakpoints: {
-            1024: {
-                gap: "1rem",
-                perPage: 1,
+          autoScroll: {
+              speed: 5,
+          },
+          type: 'loop',
+          // autoplay: true,
+          drag: true,
+          // padding: 20,
+          // rewind: true,
+          // height: 500,
+          autoWidth: true, 
+          focus: 'center',
+          // speed: 0,
+          // rewindSpeed: 0,
+          drag: true,
+          gap: 240  ,
+          // pauseOnHover: false,
+          arrows: false,
+          // pauseOnFocus: false,
+          direction: 'rtl',
+          paginationDirection: 'rtl',
+          perPage: 3,
+          pagination:true,
+          classes: {
+            pagination: 'splide__pagination !flex !-bottom-6 comment-carousel-class-pagination',
+            page      : 'splide__pagination__page !bg-gray5  !h-[5px] !w-[9px] !rounded-[100px] comment-carousel-class-page [&.is-active]:!bg-yellow [&.is-active]:!w-6 [&.is-active]:!mx-[6px]',
+          active:"splide__slide--active"
+          },  
+          // perMove: 1,
+            // breakpoints: {
+            //     1024: {
+            //         gap: "1rem",
+            //         perPage: 1,
 
-            }
-        }
+            //     }
+            // }
+
+        // type    : 'loop',
+        // perPage : 3,
+        // autoplay: true,
+
 
     })
 
-    commentSlider.on('pagination:mounted', function (data) {
-        data.list.classList.add('splide__pagination__page--custome');
+    // commentSlider.on('active', function (data) {
+    //   console.log({data})
+    //     data.slide.classList.add('!w-[604px]');
+    //     data.slide.classList.add('!h-[217px]');
 
-    });
+    // });
+    // commentSlider.on('inactive', function (data) {
+    //   console.log({data})
+    //     data.slide.classList.remove("!w-[604px]");
+    //     data.slide.classList.remove('!h-[217px]');
+
+    // });
+
+  //   commentSlider.on('move', function(newIndex,prevIndex,destIndex) {
+  //     console.log("first",{newIndex,prevIndex,destIndex})
+  //   // Remove the active class from the previous slide
+  //   // const prevActiveSlide = document.querySelector('.splide__slide--active');
+  //   // console.log(prevActiveSlide)
+  //   // if (prevActiveSlide) {
+  //   //   prevActiveSlide.classList.remove('splide__slide--active');
+  //   // }
+
+  //   // // Add the active class to the current slide
+  //   // const activeSlide = document.querySelector('.splide__slide--active');
+  //   // console.log({activeSlide})
+  //   // if (activeSlide) {
+  //   //   activeSlide.classList.add('splide__slide--active');
+  //   // }
+  //   const slides=document.getElementsByClassName("splide__slide--comment")
+  //   console.log(slides[newIndex])
+  //   const newSlideClassList=slides[newIndex]?.classList
+  //   const prevSlideClassList=slides[prevIndex]?.classList
+
+
+  //   if (!newSlideClassList.contains("splide__slide--active")) {
+  //     // console.log("first")
+  //     newSlideClassList.add('splide__slide--active')
+     
+
+  //   }
+  //   // if (prevSlideClassList.contains("splide__slide--active")) {
+    
+  //   // prevSlideClassList.remove('splide__slide--active');
+  //   // }
+  //   // commentSlider.refresh();
+
+  
+
+  // });
+  // commentSlider.on( 'mounted', function (data) {
+  //   console.log(data)
+  //   // This will be executed.
+  // } );
+
+
+
+    
     commentSlider.mount()
 })
 
