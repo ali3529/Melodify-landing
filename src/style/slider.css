@@ -41,14 +41,44 @@
   display: flex !important;
 } */
 
-.splide__slide--active {
+/* .splide__slide--active {
   transform: scale(1.1);
   border: 2px solid #e53e3e;
-}
-.splide__slide {
-  transition: all .25s ease-in-out;
-}
+}*/
 
-.splide__list  .is-active  {
+.splide__list .is-active {
   transform: scale(1.1);
+} 
+
+.splide__slide {
+  transition: all 0.25s ease-in-out;
+}
+.splide__list .is-active::before {
+  content: " ";
+  width: 40px;
+  height: 40px;
+  background-image: url("/src/assets/landing/cama.webp");
+  top: -22px;
+  /* top: 0; */
+  position: absolute;
+  left: 40px;
+  animation: show .3s ease 0s 1 normal forwards;
+  transition: all 0.25s ease-in-out;
+
+}
+@keyframes show {
+	0% {
+		opacity: 0.0;
+		transform: scale(0.2);
+	}
+
+	90% {
+		opacity: .9;
+		transform: scale(1.1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
