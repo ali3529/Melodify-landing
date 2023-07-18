@@ -2973,9 +2973,19 @@ video {
   /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 
+.fa-format-250 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 250, 'FANU' 1, "DOTR" 0;
+}
+
+.fa-format-300 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 300, 'FANU' 1, "DOTR" 0;
+}
+
 .fa-format-380 {
   font-family: 'dana_vf';
-  font-variation-settings: 'wght' 400, 'FANU' 1, "DOTR" 0;
+  font-variation-settings: 'wght' 380, 'FANU' 1, "DOTR" 0;
 }
 
 .fa-format-400 {
@@ -3158,40 +3168,20 @@ video {
     order: 9999;
   }
 
-  .md\:col-span-1{
-    grid-column: span 1 / span 1;
-  }
-
   .md\:col-span-2{
     grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-4{
-    grid-column: span 4 / span 4;
-  }
-
-  .md\:col-span-8{
-    grid-column: span 8 / span 8;
   }
 
   .md\:col-span-3{
     grid-column: span 3 / span 3;
   }
 
-  .md\:col-span-6{
-    grid-column: span 6 / span 6;
+  .md\:col-span-8{
+    grid-column: span 8 / span 8;
   }
 
   .md\:col-start-3{
     grid-column-start: 3;
-  }
-
-  .md\:col-start-2{
-    grid-column-start: 2;
-  }
-
-  .md\:col-start-auto{
-    grid-column-start: auto;
   }
 
   .md\:mx-1{
@@ -3271,18 +3261,6 @@ video {
 
   .md\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
-  .md\:items-start{
-    align-items: flex-start;
   }
 
   .md\:items-center{
@@ -3384,10 +3362,6 @@ video {
 
   .lg\:col-start-6{
     grid-column-start: 6;
-  }
-
-  .lg\:col-start-1{
-    grid-column-start: 1;
   }
 
   .lg\:mx-12{
@@ -3494,10 +3468,6 @@ video {
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:flex-col{
-    flex-direction: column;
   }
 
   .lg\:flex-nowrap{
