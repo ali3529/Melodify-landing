@@ -162,7 +162,8 @@ document.addEventListener("DOMContentLoaded", function () {
       speed: 5,
     },
     type: "loop",
-    // autoplay: true,
+    autoplay: true,
+    
     drag: true,
     rewind : true,
     // padding: 20,
@@ -207,6 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       768: {
         perPage: 1,
+        height:224
       },
     },
   });
@@ -255,9 +257,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //   // commentSlider.refresh();
 
   // });
-  // commentSlider.on( 'mounted', function (data) {
-  //   console.log(data)
-  //   // This will be executed.
+  // commentSlider.on( 'ready', function () {
+  //   commentSlider.refresh();
   // } );
 
   commentSlider.mount();

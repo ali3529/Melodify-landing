@@ -50,6 +50,13 @@
   transform: scale(1.1);
 } 
 
+.splide__list .is-active .user-name{
+  color:#F2C94C
+} 
+
+
+
+
 .splide__slide {
   transition: all 0.25s ease-in-out;
 }

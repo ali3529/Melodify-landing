@@ -85,7 +85,7 @@ module.exports = {
 
       fontFamily: {
         dana: ["Dana"],
-        faNum: "farsiNum",
+        faNum: ["dana-num"],
         poppins: ["poppins"],
       },
       fontSize: {
