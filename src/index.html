@@ -53,9 +53,7 @@
       </div>
     </header>
     <!-- ANCHOR MAIN -->
-    <main
-      class="flex flex-col h-full w-full  overflow-visible pb-[180px]"
-    >
+    <main class="flex flex-col h-full w-full overflow-visible pb-[180px]">
       <!-- ANCHOR PLATFORM SECTION -->
       <section
         class="flex flex-col mt-[103px] md:-mt-[121px] z-40 relative h-[834px]"
@@ -63,93 +61,424 @@
         <h3 class="fa-format-500 text-lg md:text-[30px] text-white mx-auto">
           در همه پلتفرم ها
         </h3>
-        <div class="grid grid-cols-1 pe-14 md:pe-36 md:grid-cols-2 gap-4">
-       
-            
-            
-          <!-- class="max-[768px]:-left-[1.29%] max-[830px]:left-[13.8%] max-[930px]:left-[18%] max-[1330px]:left-[24.1%] min-[2500px]:-left-[0.7%] min-[4000px]:-left-[0.4%] -top-[2.5%] absolute z-10 h-[420px]" -->
-            <div dir="ltr" class=" flex w-full">
-              <div
-              >
-                <picture>
-                  <source
-                    srcset="/src/assets/landing/mobile_frame.webp"
-                    media="(min-width:768px)"
-                  />
-                  <img
-                    class="h-full me-36"
-                    src="/src/assets/landing/mobile_frame_sm.webp"
-                    alt=""
-                  />
-                </picture>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div dir="ltr" class="relative flex w-full">
+            <div
+              class="max-[768px]:-left-[1.29%] max-[830px]:left-[13.8%] max-[930px]:left-[18%] max-[1330px]:left-[24.1%] min-[2500px]:-left-[0.7%] min-[4000px]:-left-[0.4%] -top-[2.5%] absolute z-10 h-[420px]"
+            >
+              <picture>
+                <source
+                  srcset="/src/assets/landing/mobile_frame.webp"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="h-full me-36"
+                  src="/src/assets/landing/mobile_frame_sm.webp"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div id="main-carousel" class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide h-[401.929px] overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="/src/assets/landing/artist_slide.webp"
+                        media="(min-width:768px)"
+                      />
+                      <img
+                        class="h-full rounded-3xl"
+                        src="/src/assets/landing/artist_slide_sm.webp"
+                        alt=""
+                      />
+                    </picture>
+                  </li>
+                  <li class="splide__slide h-[401.929px] overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="/src/assets/landing/home_slide.webp"
+                        media="(min-width:768px)"
+                      />
+                      <img
+                        class="h-full rounded-3xl"
+                        src="/src/assets/landing/home_slide_sm.webp"
+                        alt=""
+                      />
+                    </picture>
+                  </li>
+                  <li class="splide__slide h-[401.929px] overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="/src/assets/landing/music_slide.webp"
+                        media="(min-width:768px)"
+                      />
+                      <img
+                        class="h-full rounded-3xl"
+                        src="/src/assets/landing/music_slide_sm.webp"
+                        alt=""
+                      />
+                    </picture>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </div>
 
-                <div id="main-carousel" class="splide">
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <li class="splide__slide h-[401.929px] overflow-hidden">
-                        <picture>
-                          <source
-                            srcset="/src/assets/landing/artist_slide.webp"
-                            media="(min-width:768px)"
-                          />
-                          <img
-                            class="h-full rounded-3xl"
-                            src="/src/assets/landing/artist_slide_sm.webp"
-                            alt=""
-                          />
-                        </picture>
-                      </li>
-                      <li class="splide__slide h-[401.929px] overflow-hidden">
-                        <picture>
-                          <source
-                            srcset="/src/assets/landing/home_slide.webp"
-                            media="(min-width:768px)"
-                          />
-                          <img
-                            class="h-full rounded-3xl"
-                            src="/src/assets/landing/home_slide_sm.webp"
-                            alt=""
-                          />
-                        </picture>
-                      </li>
-                      <li class="splide__slide h-[401.929px] overflow-hidden">
-                        <picture>
-                          <source
-                            srcset="/src/assets/landing/music_slide.webp"
-                            media="(min-width:768px)"
-                          />
-                          <img
-                            class="h-full rounded-3xl"
-                            src="/src/assets/landing/music_slide_sm.webp"
-                            alt=""
-                          />
-                        </picture>
-                      </li>
-                    </ul>
+          <div
+            class="w-full max-w-[623px] h-full flex flex-col gap-5 justify-between items-center"
+          >
+            <div
+              class="flex flex-col lg:flex-row gap-2 w-[72.55%] items-center justify-between"
+            >
+              <div class="flex items-center gap-1 lg:gap-3">
+                <img
+                  class="w-6 h-6 lg:w-10 lg:h-10 object-contain"
+                  src="/src/assets/landing/android.svg"
+                  alt=""
+                />
+                <p class="text-white text-sm sm:text-lg fa-format-500">
+                  اندروید
+                </p>
+              </div>
+              <div class="flex gap-2 lg:gap-6">
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/playstore.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      گوگل پلی استور
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
+
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/link.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      لینک مستقیم
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div
+              class="flex flex-col lg:flex-row gap-2 items-center w-[45.66%]"
+            >
+              <div class="flex items-center gap-1 lg:gap-3">
+                <img
+                  class="w-6 h-6 lg:w-10 lg:h-10 object-contain"
+                  src="/src/assets/landing/television.svg"
+                  alt=""
+                />
+                <p class="text-white text-sm sm:text-lg fa-format-500">
+                  تلوزیون
+                </p>
+              </div>
+              <div class="flex gap-2 lg:gap-6">
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/television_platform.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      تلوزیون
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row gap-2 items-center w-full justify-between"
+            >
+              <div class="flex items-center gap-1 lg:gap-3">
+                <img
+                  class="w-6 h-6 lg:w-10 lg:h-10 object-contain"
+                  src="/src/assets/landing/monitor.svg"
+                  alt=""
+                />
+                <p class="text-white text-sm sm:text-lg fa-format-500">
+                  دسکتاپ
+                </p>
+              </div>
+              <div class="flex gap-2 lg:gap-6">
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/windows.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      ویندوز
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
 
-          
-          <div>222222222222</div>
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/linux.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      لینوکس
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/mac.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      مک
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row gap-2 items-center w-[70.63%] justify-between"
+            >
+              <div class="flex items-center gap-1 lg:gap-3">
+                <img
+                  class="w-6 h-6 lg:w-10 lg:h-10 object-contain"
+                  src="/src/assets/landing/apple.svg"
+                  alt=""
+                />
+                <p class="text-white text-sm sm:text-lg fa-format-500">آیفون</p>
+              </div>
+              <div class="flex gap-2 lg:gap-6">
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/ios.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      آیفون
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card -->
+                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                  <div
+                    class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
+                  >
+                    <img
+                      class="w-8 h-8 lg:w-12 lg:h-12 object-contain"
+                      src="/src/assets/landing/webapp.svg"
+                      alt=""
+                    />
+                    <p
+                      class="text-white text-xs lg:text-sm fa-format-500 leading-3 lg:leading-5 text-center lg:mt-4 mt-3 mb-2"
+                    >
+                      وب اپلیکشن
+                    </p>
+                    <div class="flex gap-1 items-center">
+                      <p
+                        class="text-[0.625rem] sm:text-sm text-center fa-format-400 text-gray5 group-hover:text-yellow"
+                      >
+                        دریافت
+                      </p>
+                      <svg
+                        class="w-[10px] lg:w-[14px] fill-gray5 group-hover:fill-yellow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                      >
+                        <path
+                          d="M10.9091 8.63636V6.81818C10.9091 6.69763 10.8612 6.58201 10.776 6.49677C10.6907 6.41153 10.5751 6.36364 10.4545 6.36364C10.334 6.36364 10.2184 6.41153 10.1331 6.49677C10.0479 6.58201 10 6.69763 10 6.81818V8.63636C10 8.75692 9.95211 8.87253 9.86687 8.95778C9.78162 9.04302 9.66601 9.09091 9.54545 9.09091H1.36364C1.24308 9.09091 1.12747 9.04302 1.04222 8.95778C0.956981 8.87253 0.909091 8.75692 0.909091 8.63636V6.81818C0.909091 6.69763 0.861201 6.58201 0.775958 6.49677C0.690714 6.41153 0.575098 6.36364 0.454545 6.36364C0.333993 6.36364 0.218377 6.41153 0.133133 6.49677C0.0478896 6.58201 0 6.69763 0 6.81818V8.63636C0 8.99802 0.143668 9.34487 0.3994 9.6006C0.655131 9.85633 1.00198 10 1.36364 10H9.54545C9.90711 10 10.254 9.85633 10.5097 9.6006C10.7654 9.34487 10.9091 8.99802 10.9091 8.63636ZM8.00909 6.26364L5.73636 8.08182C5.65612 8.14523 5.55683 8.17973 5.45455 8.17973C5.35227 8.17973 5.25298 8.14523 5.17273 8.08182L2.9 6.26364C2.81719 6.18547 2.76674 6.07907 2.75862 5.96548C2.75051 5.85189 2.78532 5.7394 2.85618 5.65025C2.92704 5.56111 3.02878 5.50181 3.14127 5.48408C3.25376 5.46636 3.3688 5.49151 3.46364 5.55455L5 6.78182V0.454545C5 0.333993 5.04789 0.218377 5.13313 0.133133C5.21838 0.0478896 5.33399 0 5.45455 0C5.5751 0 5.69071 0.0478896 5.77596 0.133133C5.8612 0.218377 5.90909 0.333993 5.90909 0.454545V6.78182L7.44545 5.55455C7.49123 5.51134 7.54547 5.47811 7.60476 5.45697C7.66404 5.43582 7.72707 5.42722 7.78985 5.4317C7.85264 5.43619 7.9138 5.45366 7.96948 5.48302C8.02516 5.51238 8.07413 5.55298 8.1133 5.60225C8.15246 5.65153 8.18097 5.7084 8.19701 5.76926C8.21305 5.83013 8.21627 5.89366 8.20647 5.95583C8.19668 6.01801 8.17408 6.07747 8.1401 6.13046C8.10612 6.18344 8.06151 6.22879 8.00909 6.26364Z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
       </section>
       <!-- ANCHOR melodifay option  SECTION -->
-      <section class="mt-[102px] mb-[183px]">
+      <section class="md:pt-[102px] pt-[252px] mb-[183px]">
         <!-- <div class=""> -->
 
         <img
@@ -229,7 +558,9 @@
         </h3>
         <div class="mx-auto container">
           <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-            <div class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]">
+            <div
+              class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]"
+            >
               <div class="w-12 h-12 md:w-[72px] md:h-[72px]">
                 <img
                   class="w-full h-full contain"
@@ -243,7 +574,9 @@
                 +۲۰۰۰ مجموعه ی متنوع با به روزرسانی روزانه
               </p>
             </div>
-            <div class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]">
+            <div
+              class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]"
+            >
               <div class="w-12 h-12 md:w-[72px] md:h-[72px]">
                 <img
                   class="w-full h-full contain"
@@ -258,7 +591,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]">
+            <div
+              class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]"
+            >
               <div class="w-12 h-12 md:w-[72px] md:h-[72px]">
                 <img
                   class="w-full h-full contain"
@@ -273,7 +608,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]">
+            <div
+              class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]"
+            >
               <div class="w-12 h-12 md:w-[72px] md:h-[72px]">
                 <img
                   class="w-full h-full contain"
@@ -288,7 +625,9 @@
               </p>
             </div>
 
-            <div class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]">
+            <div
+              class="flex flex-col items-center gap-3 md:gap-10 h-20 md:h-[152px]"
+            >
               <div class="w-12 h-12 md:w-[72px] md:h-[72px]">
                 <img
                   class="w-full h-full contain"
@@ -404,7 +743,6 @@
             <div class="comment-carousel splide items-center w-full">
               <div class="splide__track py-14 overflow-hidden">
                 <ul class="splide__list h-[182px]">
-
                   <li
                     class="splide__slide splide__slide--comment md:w-[505px] md:h-[182px] w-[330px] h-[224px] bg-primary rounded-[20px] border border-gray1 flex items-center p-4 md:p-8"
                   >
@@ -423,7 +761,7 @@
                           :Reza Abolhasani
                         </div>
                         <div
-                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed "
+                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed"
                         >
                           با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
                           خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
@@ -505,7 +843,6 @@
                       </div>
                     </div>
                   </li>
-                  
 
                   <li
                     class="splide__slide splide__slide--comment md:w-[505px] md:h-[182px] w-[330px] h-[224px] bg-primary rounded-[20px] border border-gray1 flex items-center p-4 md:p-8"
@@ -525,7 +862,7 @@
                           :Reza Abolhasani
                         </div>
                         <div
-                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed "
+                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed"
                         >
                           با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
                           خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
@@ -607,7 +944,6 @@
                       </div>
                     </div>
                   </li>
-                  
 
                   <li
                     class="splide__slide splide__slide--comment md:w-[505px] md:h-[182px] w-[330px] h-[224px] bg-primary rounded-[20px] border border-gray1 flex items-center p-4 md:p-8"
@@ -627,7 +963,7 @@
                           :Reza Abolhasani
                         </div>
                         <div
-                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed "
+                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed"
                         >
                           با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
                           خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
@@ -709,7 +1045,6 @@
                       </div>
                     </div>
                   </li>
-                  
 
                   <li
                     class="splide__slide splide__slide--comment md:w-[505px] md:h-[182px] w-[330px] h-[224px] bg-primary rounded-[20px] border border-gray1 flex items-center p-4 md:p-8"
@@ -729,7 +1064,7 @@
                           :Reza Abolhasani
                         </div>
                         <div
-                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed "
+                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed"
                         >
                           با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
                           خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
@@ -811,7 +1146,6 @@
                       </div>
                     </div>
                   </li>
-                  
 
                   <li
                     class="splide__slide splide__slide--comment md:w-[505px] md:h-[182px] w-[330px] h-[224px] bg-primary rounded-[20px] border border-gray1 flex items-center p-4 md:p-8"
@@ -831,7 +1165,7 @@
                           :Reza Abolhasani
                         </div>
                         <div
-                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed "
+                          class="user-text text-right text-gray7 text-xs md:text-sm fa-format-250 leading-relaxed"
                         >
                           با سلام و تشکر از برنامه خوب تون. به نظر من برنامه
                           خیلی خوب و حتی میشه گفت بهترین. حتماً دانلود کنید که
@@ -913,8 +1247,6 @@
                       </div>
                     </div>
                   </li>
-                  
-
                 </ul>
               </div>
             </div>
@@ -934,8 +1266,10 @@
     <!-- ANCHOR FOOTER -->
     <footer class="bg-gray4 w-full pt-[52px] pb-5 min-h-[300px]">
       <div class="container mx-auto border-b border-gray2 pb-6 h-full">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 min-h-[235px]">
-          <div class="md:col-span-3  lg:col-span-1 col-span-2">
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 min-h-[235px]"
+        >
+          <div class="md:col-span-3 lg:col-span-1 col-span-2">
             <div class="flex flex-col items-center lg:items-start gap-4">
               <img
                 class="md:w-[185px] w-[115px] md:h-16 h-10"
@@ -1009,7 +1343,7 @@
               DMCA
             </li>
           </ul>
-          <div class=" md:col-span-3  lg:col-span-1 col-span-2">
+          <div class="md:col-span-3 lg:col-span-1 col-span-2">
             <div class="flex flex-col gap-3 mt-2">
               <div
                 class="flex gap-3 transition-colors text-gray7 hover:text-yellow cursor-pointer"
