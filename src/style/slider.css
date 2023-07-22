@@ -57,7 +57,7 @@
 
 
 
-.splide__slide {
+.comment-carousel .splide__slide {
   transition: all 0.25s ease-in-out;
 }
 .comment-carousel .splide__list .is-active::before {

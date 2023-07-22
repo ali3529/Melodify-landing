@@ -1,146 +1,208 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const slide = new Splide("#main-carousel", {
-    autoScroll: {
-      speed: 5,
-    },
+// document.addEventListener("DOMContentLoaded", function () {
+//   const slide = new Splide("#main-carousel", {
 
-    // height: "395px",
-    // width: 422,
-    type: "loop",
-    focus: 1,
-    // autoWidth: true,
 
-    autoplay: false,
-    drag: true,
-    pauseOnHover: false,
-    pagination: false,
-    arrows: false,
-    pauseOnFocus: false,
-    direction: "rtl",
-    focus: 1,
-    perPage: 2.3,
-    direction: "ltr",
-    // breakpoints: {
+//     type: 'loop',
+//     autoplay: true,
+//     interval: 3000,
+//     direction: 'ltr',
+//     arrows: false,
+//     pagination: false,
+//     rewind: true,
+//     speed: 800,
+//     perPage: 2.1,
+//     drag:true,
+//     breakpoints: {
+//       640: {
+//         perPage: 1,
+//       }
+//     }
 
-    //     // 1024: {
-    //     //     height: "17.3rem",
-    //     //     gap: 20,
-    //     //     perPage: 3,
 
-    //     // },
 
-    // },
+// //     autoScroll: {
+// //       speed: 5,
+// //     },
 
-    breakpoints: {
-      1500: {
-        gap: 35,
-      },
-      1480: {
-        gap: 30,
-      },
-      1400: {
-        gap: 25,
-      },
-      1380: {
-        gap: 20,
-      },
-      1350: {
-        gap: 15,
-      },
-      1330: {
-        perPage: 2,
-        gap: 15,
-      },
-      950: {
-        perPage: 2,
-        gap: 10,
-      },
-      930: {
-        perPage: 1.7,
-        gap: 10,
-      },
-      830: {
-        perPage: 1.5,
-        gap: 10,
-      },
-      768: {
-        perPage: 3,
-        gap: 35,
-      },
-      687: {
-        perPage: 3,
-        gap: 20,
-      },
-      668: {
-        perPage: 3,
-        gap: 15,
-      },
-      637: {
-        perPage: 3,
-        gap: 10,
-      },
-      650: {
-        perPage: 2.3,
-        gap: 10,
-      },
+// //     // height: "395px",
+// //     // width: 422,
+// //     type: "loop",
+// //     focus: 1,
+// //     // autoWidth: true,
 
-      // 1000: {
-      //   perPage: 3,
-      //   gap: "2rem",
-      // },
-      // 600: {
-      //   padding: { left: "-50px" },
-      //   focus: "center",
-      //   perPage: 2,
-      // },
-      // 340: {
-      //   padding: { left: "-200px" },
-      //   focus: "center",
-      //   perPage: 1,
-      // },
-    },
-    //    breakpoints: {
-    //     1300: {
-    //       perPage: 4,
-    //       gap: "2rem",
-    //     },
-    //     1000: {
-    //       perPage: 3,
-    //       gap: "2rem",
-    //     },
-    //     600: {
-    //       padding: { left: "-50px" },
-    //       focus: "center",
-    //       perPage: 2,
-    //     },
-    //     340: {
-    //       padding: { left: "-200px" },
-    //       focus: "center",
-    //       perPage: 1,
-    //     },
-    //   },
-  });
-  slide.mount();
-});
+// //     autoplay: true,
+// //     // drag: false,
+// //     drag: true,
+// //     pauseOnHover: false,
+// //     pagination: false,
+// //     arrows: false,
+// //     pauseOnFocus: false,
+// //     focus: 1,
+// //     perPage: 2.3,
+// //     direction: "ltr",
+// //     // //////////////////////////////
+// //     // breakpoints: {
+
+// //     //     // 1024: {
+// //     //     //     height: "17.3rem",
+// //     //     //     gap: 20,
+// //     //     //     perPage: 3,
+
+// //     //     // },
+
+// //     // },
+// // // /////////////////////////////////////////////////////////////////
+// //     breakpoints: {
+// //       1500: {
+// //         gap: 35,
+// //       },
+// //       1480: {
+// //         gap: 30,
+// //       },
+// //       1400: {
+// //         gap: 25,
+// //       },
+// //       1380: {
+// //         gap: 20,
+// //       },
+// //       1350: {
+// //         gap: 15,
+// //       },
+// //       1330: {
+// //         perPage: 2,
+// //         gap: 15,
+// //       },
+// //       950: {
+// //         perPage: 2,
+// //         gap: 10,
+// //       },
+// //       930: {
+// //         perPage: 1.7,
+// //         gap: 10,
+// //       },
+// //       830: {
+// //         perPage: 1.5,
+// //         gap: 10,
+// //       },
+// //       768: {
+// //         perPage: 3,
+// //         gap: 35,
+// //       },
+// //       687: {
+// //         perPage: 3,
+// //         gap: 20,
+// //       },
+// //       668: {
+// //         perPage: 3,
+// //         gap: 15,
+// //       },
+// //       637: {
+// //         perPage: 3,
+// //         gap: 10,
+// //       },
+// //       650: {
+// //         perPage: 2.3,
+// //         gap: 10,
+// //       },
+
+// //       // 1000: {
+// //       //   perPage: 3,
+// //       //   gap: "2rem",
+// //       // },
+// //       // 600: {
+// //       //   padding: { left: "-50px" },
+// //       //   focus: "center",
+// //       //   perPage: 2,
+// //       // },
+// //       // 340: {
+// //       //   padding: { left: "-200px" },
+// //       //   focus: "center",
+// //       //   perPage: 1,
+// //       // },
+// //     },
+
+// //     // /////////////////////////////////////////////////////////
+// //     //    breakpoints: {
+// //     //     1300: {
+// //     //       perPage: 4,
+// //     //       gap: "2rem",
+// //     //     },
+// //     //     1000: {
+// //     //       perPage: 3,
+// //     //       gap: "2rem",
+// //     //     },
+// //     //     600: {
+// //     //       padding: { left: "-50px" },
+// //     //       focus: "center",
+// //     //       perPage: 2,
+// //     //     },
+// //     //     340: {
+// //     //       padding: { left: "-200px" },
+// //     //       focus: "center",
+// //     //       perPage: 1,
+// //     //     },
+// //     //   },
+//   });
+  
+//   slide.mount();
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var splide = new Splide("#splide", {
+//     type: "loop",
+//     // rewind: true,
+//     direction: "rtl",
+//     perPage: 4,
+//     perMove: 1,
+//     pagination: false,
+//     arrows: false,
+//     breakpoints: {
+//       1300: {
+//         perPage: 4,
+//         gap: "2rem",
+//       },
+//       1000: {
+//         perPage: 3,
+//         gap: "2rem",
+//       },
+//       600: {
+//         padding: { left: "-50px" },
+//         focus: "center",
+//         perPage: 2,
+//       },
+//       340: {
+//         padding: { left: "-200px" },
+//         focus: "center",
+//         perPage: 1,
+//       },
+//     },
+//   });
+//   splide.mount();
+// });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide("#splide", {
     type: "loop",
     // rewind: true,
-    direction: "rtl",
-    perPage: 4,
+    direction: "ltr",
+    drag:false,
+    autoplay: true,
+    width:"100%",
+    // autoWidth:true,
+    perPage: 2.3,
     perMove: 1,
     pagination: false,
     arrows: false,
     breakpoints: {
       1300: {
-        perPage: 4,
+        // perPage: 4,
         gap: "2rem",
       },
-      1000: {
-        perPage: 3,
-        gap: "2rem",
-      },
+      // 1000: {
+      //   // perPage: 3,
+      //   gap: "2rem",
+      // },
       600: {
         padding: { left: "-50px" },
         focus: "center",
@@ -155,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const commentSlider = new Splide(".comment-carousel", {
