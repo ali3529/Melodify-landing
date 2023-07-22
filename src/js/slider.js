@@ -190,23 +190,28 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     width:"100%",
     // autoWidth:true,
-    perPage: 2.3,
+    perPage: 2.5,
     perMove: 1,
     pagination: false,
     arrows: false,
     breakpoints: {
-      1300: {
-        // perPage: 4,
-        gap: "2rem",
-      },
+      // 1300: {
+      //   // perPage: 4,
+      //   gap: "2rem",
+      // },
       // 1000: {
       //   // perPage: 3,
       //   gap: "2rem",
       // },
-      600: {
-        padding: { left: "-50px" },
+      // 600: {
+      //   padding: { left: "-50px" },
+      //   focus: "center",
+      //   perPage: 2,
+      // },
+      768: {
+        // padding: { left: "-200px" },
         focus: "center",
-        perPage: 2,
+        perPage: 1,
       },
       340: {
         padding: { left: "-200px" },
@@ -215,6 +220,19 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  splide.on('active', function (data) {
+    // console.log(data)
+    // console.log(data.slide)
+    if (data.slide.classList.contains("is-active")&&!data.isClone) {
+      // console.log(data.slide)
+      // console.log()
+      
+      console.log(    
+        document.getElementById("mobile_frame_container").style.width=data.slide.offsetWidth+"px")
+    }
+      // data.slide.classList.add('!w-[604px]');
+    })
+  
   splide.mount();
 });
 

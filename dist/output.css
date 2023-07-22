@@ -1489,10 +1489,6 @@ video {
   margin-left: 2rem;
 }
 
-.ml-\[70px\]{
-  margin-left: 70px;
-}
-
 .mr-1{
   margin-right: 0.25rem;
 }
@@ -2429,10 +2425,6 @@ video {
 
 .max-w-\[623px\]{
   max-width: 623px;
-}
-
-.max-w-\[800px\]{
-  max-width: 800px;
 }
 
 .shrink{
@@ -3392,10 +3384,6 @@ video {
     width: 72px;
   }
 
-  .md\:w-\[93\%\]{
-    width: 93%;
-  }
-
   .md\:grid-cols-10{
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
@@ -3472,12 +3460,6 @@ video {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 1000px){
-  .min-\[1000px\]\:w-\[80\%\]{
-    width: 80%;
   }
 }
 
