@@ -194,15 +194,20 @@ document.addEventListener("DOMContentLoaded", function () {
     perMove: 1,
     pagination: false,
     arrows: false,
+    // gap:"1.5rem",
     breakpoints: {
       // 1300: {
       //   // perPage: 4,
       //   gap: "2rem",
       // },
-      // 1000: {
-      //   // perPage: 3,
-      //   gap: "2rem",
-      // },
+      1000: {
+        perPage: 2.3,
+        // gap: "2rem",
+      },
+    900: {
+        perPage: 2,
+        // gap: "2rem",
+      },
       // 600: {
       //   padding: { left: "-50px" },
       //   focus: "center",
@@ -210,14 +215,14 @@ document.addEventListener("DOMContentLoaded", function () {
       // },
       768: {
         // padding: { left: "-200px" },
-        focus: "center",
-        perPage: 1,
+        // focus: "center",
+        perPage: 2.3,
       },
-      340: {
-        padding: { left: "-200px" },
-        focus: "center",
-        perPage: 1,
-      },
+      // 340: {
+      //   padding: { left: "-200px" },
+      //   focus: "center",
+      //   perPage: 1,
+      // },
     },
   });
   splide.on('active', function (data) {
