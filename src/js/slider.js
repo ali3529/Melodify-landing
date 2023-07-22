@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     
     drag: true,
-    rewind : true,
+    // rewind : true,
     // padding: 20,
     // rewind: true,
     height: 182,
@@ -341,6 +341,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // commentSlider.on( 'ready', function () {
   //   commentSlider.refresh();
   // } );
-
+  // commentSlider.on('active', function (data) {
+  //   if (data.slide.classList.contains("is-active")&&!data.isClone) {
+  //   console.log(data.slide)}
+  //   // data.slide.style.transform = "scale(1.1)"
+  //     // data.slide.classList.add('!w-[604px]');
+  //   })
+  // commentSlider.on('move', function(newIndex,prevIndex,destIndex){
+  //   console.log(newIndex,prevIndex,commentSlider.root.children[0].children[0].children     )
+  //   commentSlider.root.children[0].children[0].children.forEach(element => {
+  //     if(element.classList.contains("is-active")) console.log(element)
+      
+  //   });
+  //   document.getElementsByClassName("splide__slide--comment")[prevIndex].style.background="red"
+  // })
   commentSlider.mount();
 });
