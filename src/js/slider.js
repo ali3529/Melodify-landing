@@ -1,7 +1,6 @@
 // document.addEventListener("DOMContentLoaded", function () {
 //   const slide = new Splide("#main-carousel", {
 
-
 //     type: 'loop',
 //     autoplay: true,
 //     interval: 3000,
@@ -17,8 +16,6 @@
 //         perPage: 1,
 //       }
 //     }
-
-
 
 // //     autoScroll: {
 // //       speed: 5,
@@ -143,7 +140,7 @@
 // //     //     },
 // //     //   },
 //   });
-  
+
 //   slide.mount();
 // });
 
@@ -180,15 +177,14 @@
 //   splide.mount();
 // });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide("#splide", {
     type: "loop",
     // rewind: true,
     direction: "ltr",
-    drag:false,
+    drag: false,
     autoplay: true,
-    width:"100%",
+    width: "100%",
     // autoWidth:true,
     perPage: 2.5,
     perMove: 1,
@@ -204,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 2.3,
         // gap: "2rem",
       },
-    900: {
+      900: {
         perPage: 2,
         // gap: "2rem",
       },
@@ -217,6 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // padding: { left: "-200px" },
         // focus: "center",
         perPage: 2.3,
+        gap:"1rem"
       },
       // 340: {
       //   padding: { left: "-200px" },
@@ -225,140 +222,195 @@ document.addEventListener("DOMContentLoaded", function () {
       // },
     },
   });
-  splide.on('active', function (data) {
+  splide.on("active", function (data) {
     // console.log(data)
     // console.log(data.slide)
-    if (data.slide.classList.contains("is-active")&&!data.isClone) {
+    if (data.slide.classList.contains("is-active") && !data.isClone) {
       // console.log(data.slide)
       // console.log()
-      
-      console.log(    
-        document.getElementById("mobile_frame_container").style.width=data.slide.offsetWidth+"px")
+
+      console.log(
+        (document.getElementById("mobile_frame_container").style.width =
+          data.slide.offsetWidth + "px")
+      );
     }
-      // data.slide.classList.add('!w-[604px]');
-    })
-  
+    // data.slide.classList.add('!w-[604px]');
+  });
+
   splide.mount();
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const commentSlider = new Splide(".comment-carousel", {
+//     autoScroll: {
+//       speed: 5,
+//     },
+//     type: "loop",
+//     autoplay: true,
+
+//     drag: true,
+//     // rewind : true,
+//     // padding: 20,
+//     // rewind: true,
+//     height: 182,
+//     // width:505,
+//     autoWidth: true,
+//     focus: "center",
+//     // speed: 0,
+//     // rewindSpeed: 0,
+//     drag: true,
+//     // gap: 240,
+//     // pauseOnHover: false,
+//     arrows: false,
+//     // pauseOnFocus: false,
+//     direction: "rtl",
+//     paginationDirection: "rtl",
+//     perPage: 3,
+//     pagination: true,
+//     // padding:0,
+
+//     classes: {
+//       pagination:
+//         "splide__pagination !flex !bottom-[15px] comment-carousel-class-pagination",
+//       page:
+//        "splide__pagination__page !bg-gray5  !h-[5px] !w-[9px] !rounded-[100px] comment-carousel-class-page [&.is-active]:!bg-yellow [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
+//       // active:
+//       // "splide__slide--active",
+//     },
+//     // perMove: 1,
+//     // breakpoints: {
+//     //     1024: {
+//     //         gap: "1rem",
+//     //         perPage: 1,
+
+//     //     }
+//     // }
+
+//     // type    : 'loop',
+//     // perPage : 3,
+//     // autoplay: true,
+//     breakpoints: {
+//       768: {
+//         perPage: 1,
+//         height:224
+//       },
+//     },
+//   });
+//   // commentSlider.on('active', function (data) {
+//   //   console.log({data})
+//   //     data.slide.classList.add('!w-[604px]');
+//   //     data.slide.classList.add('!h-[217px]');
+
+//   // });
+//   // commentSlider.on('inactive', function (data) {
+//   //   console.log({data})
+//   //     data.slide.classList.remove("!w-[604px]");
+//   //     data.slide.classList.remove('!h-[217px]');
+
+//   // });
+
+//   //   commentSlider.on('move', function(newIndex,prevIndex,destIndex) {
+//   //     console.log("first",{newIndex,prevIndex,destIndex})
+//   //   // Remove the active class from the previous slide
+//   //   // const prevActiveSlide = document.querySelector('.splide__slide--active');
+//   //   // console.log(prevActiveSlide)
+//   //   // if (prevActiveSlide) {
+//   //   //   prevActiveSlide.classList.remove('splide__slide--active');
+//   //   // }
+
+//   //   // // Add the active class to the current slide
+//   //   // const activeSlide = document.querySelector('.splide__slide--active');
+//   //   // console.log({activeSlide})
+//   //   // if (activeSlide) {
+//   //   //   activeSlide.classList.add('splide__slide--active');
+//   //   // }
+//   //   const slides=document.getElementsByClassName("splide__slide--comment")
+//   //   console.log(slides[newIndex])
+//   //   const newSlideClassList=slides[newIndex]?.classList
+//   //   const prevSlideClassList=slides[prevIndex]?.classList
+
+//   //   if (!newSlideClassList.contains("splide__slide--active")) {
+//   //     // console.log("first")
+//   //     newSlideClassList.add('splide__slide--active')
+
+//   //   }
+//   //   // if (prevSlideClassList.contains("splide__slide--active")) {
+
+//   //   // prevSlideClassList.remove('splide__slide--active');
+//   //   // }
+//   //   // commentSlider.refresh();
+
+//   // });
+//   // commentSlider.on( 'ready', function () {
+//   //   commentSlider.refresh();
+//   // } );
+//   // commentSlider.on('active', function (data) {
+//   //   if (data.slide.classList.contains("is-active")&&!data.isClone) {
+//   //   console.log(data.slide)}
+//   //   // data.slide.style.transform = "scale(1.1)"
+//   //     // data.slide.classList.add('!w-[604px]');
+//   //   })
+//   // commentSlider.on('move', function(newIndex,prevIndex,destIndex){
+//   //   console.log(newIndex,prevIndex,commentSlider.root.children[0].children[0].children     )
+//   //   commentSlider.root.children[0].children[0].children.forEach(element => {
+//   //     if(element.classList.contains("is-active")) console.log(element)
+
+//   //   });
+//   //   document.getElementsByClassName("splide__slide--comment")[prevIndex].style.background="red"
+//   // })
+//   commentSlider.mount();
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const commentSlider = new Splide(".comment-carousel", {
-    autoScroll: {
-      speed: 5,
-    },
-    type: "loop",
+  const commentsSplide = new Splide("#comments-splide", {
     autoplay: true,
-    
-    drag: true,
-    // rewind : true,
-    // padding: 20,
-    // rewind: true,
-    height: 182,
-    // width:505,
-    autoWidth: true,
-    focus: "center",
-    // speed: 0,
-    // rewindSpeed: 0,
-    drag: true,
-    gap: 240,
-    // pauseOnHover: false,
-    arrows: false,
-    // pauseOnFocus: false,
     direction: "rtl",
-    paginationDirection: "rtl",
-    perPage: 3,
-    pagination: true,
-    // padding:0,
-    
+    type: "loop",
+    perPage: 2.5,
+    focus: "center",
+    arrows: false,
+    gap: "2.5rem",
+    drag: true,
+    // padding:"40px",
+
+    // autoplay
+    speed: 1000,
     classes: {
-      pagination:
-        "splide__pagination !flex !bottom-[15px] comment-carousel-class-pagination",
-      page:
-       "splide__pagination__page !bg-gray5  !h-[5px] !w-[9px] !rounded-[100px] comment-carousel-class-page [&.is-active]:!bg-yellow [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
-      // active: 
-      // "splide__slide--active",
+      pagination: "splide__pagination !flex !-bottom-[20px] ",
+      page: "splide__pagination__page !bg-gray5  !h-[5px] !w-[9px] !rounded-[100px] [&.is-active]:!bg-yellow [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
     },
-    // perMove: 1,
-    // breakpoints: {
-    //     1024: {
-    //         gap: "1rem",
-    //         perPage: 1,
-
-    //     }
-    // }
-
-    // type    : 'loop',
-    // perPage : 3,
-    // autoplay: true,
     breakpoints: {
       768: {
         perPage: 1,
-        height:224
       },
+      850: {
+        perPage: 2.1,
+      },
+      1650:{
+        gap:"2.5rem"
+      },
+      3560:{
+        gap:"5rem"
+      }
     },
   });
-  // commentSlider.on('active', function (data) {
-  //   console.log({data})
-  //     data.slide.classList.add('!w-[604px]');
-  //     data.slide.classList.add('!h-[217px]');
 
-  // });
-  // commentSlider.on('inactive', function (data) {
-  //   console.log({data})
-  //     data.slide.classList.remove("!w-[604px]");
-  //     data.slide.classList.remove('!h-[217px]');
+  commentsSplide.on("move", (newIndex, oldIndex) => {
+    if (screen.width > 768) {
+      const newSlide = commentsSplide.Components.Elements.slides[newIndex];
+      newSlide.classList.add("active-comment-slide");
 
-  // });
+      const oldSlide = commentsSplide.Components.Elements.slides[oldIndex];
+      oldSlide.classList.remove("active-comment-slide");
+    }
+  });
 
-  //   commentSlider.on('move', function(newIndex,prevIndex,destIndex) {
-  //     console.log("first",{newIndex,prevIndex,destIndex})
-  //   // Remove the active class from the previous slide
-  //   // const prevActiveSlide = document.querySelector('.splide__slide--active');
-  //   // console.log(prevActiveSlide)
-  //   // if (prevActiveSlide) {
-  //   //   prevActiveSlide.classList.remove('splide__slide--active');
-  //   // }
+  commentsSplide.on("ready", () => {
+    if (screen.width > 768) {
+      const firstSlide = commentsSplide.Components.Elements.slides[0];
+      firstSlide.classList.add("active-comment-slide");
+    }
+  });
 
-  //   // // Add the active class to the current slide
-  //   // const activeSlide = document.querySelector('.splide__slide--active');
-  //   // console.log({activeSlide})
-  //   // if (activeSlide) {
-  //   //   activeSlide.classList.add('splide__slide--active');
-  //   // }
-  //   const slides=document.getElementsByClassName("splide__slide--comment")
-  //   console.log(slides[newIndex])
-  //   const newSlideClassList=slides[newIndex]?.classList
-  //   const prevSlideClassList=slides[prevIndex]?.classList
-
-  //   if (!newSlideClassList.contains("splide__slide--active")) {
-  //     // console.log("first")
-  //     newSlideClassList.add('splide__slide--active')
-
-  //   }
-  //   // if (prevSlideClassList.contains("splide__slide--active")) {
-
-  //   // prevSlideClassList.remove('splide__slide--active');
-  //   // }
-  //   // commentSlider.refresh();
-
-  // });
-  // commentSlider.on( 'ready', function () {
-  //   commentSlider.refresh();
-  // } );
-  // commentSlider.on('active', function (data) {
-  //   if (data.slide.classList.contains("is-active")&&!data.isClone) {
-  //   console.log(data.slide)}
-  //   // data.slide.style.transform = "scale(1.1)"
-  //     // data.slide.classList.add('!w-[604px]');
-  //   })
-  // commentSlider.on('move', function(newIndex,prevIndex,destIndex){
-  //   console.log(newIndex,prevIndex,commentSlider.root.children[0].children[0].children     )
-  //   commentSlider.root.children[0].children[0].children.forEach(element => {
-  //     if(element.classList.contains("is-active")) console.log(element)
-      
-  //   });
-  //   document.getElementsByClassName("splide__slide--comment")[prevIndex].style.background="red"
-  // })
-  commentSlider.mount();
+  commentsSplide.mount();
 });
