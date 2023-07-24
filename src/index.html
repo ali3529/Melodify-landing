@@ -266,7 +266,7 @@
               </div>
               <div class="flex gap-2 lg:gap-6">
                 <!-- card -->
-                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                <div onclick="goToPage('tv.html')" class="flex cursor-pointer gap-3 lg:gap-6">
                   <div
                     class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
                   >
@@ -474,7 +474,7 @@
                 </div>
 
                 <!-- card -->
-                <div class="flex cursor-pointer gap-3 lg:gap-6">
+                <div onclick="goToPage('ios.html')" class="flex cursor-pointer gap-3 lg:gap-6">
                   <div
                     class="group flex flex-col items-center p-3 lg:py-4 lg:px-6 w-[102px] h-[102px] lg:w-[140px] lg:h-[140px] rounded-[10px] bg-primary hover:bg-gray4 transition-colors"
                   >
@@ -1747,6 +1747,7 @@
               دانلود مستقیم
             </li>
             <li
+            onclick="goToPage('tv.html')"
               class="md:my-2 leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
             >
               تلوزیون هوشمند
@@ -1813,5 +1814,11 @@
         Copyright © 2023.All Rights Reserved By melodify
       </div>
     </footer>
+
+    <script>
+      function goToPage(path) {
+        window.location.href = path;
+      }
+      </script>
   </body>
 </html>
