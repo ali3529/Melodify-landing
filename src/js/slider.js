@@ -213,6 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // padding: { left: "-200px" },
         // focus: "center",
         perPage: 2.3,
+        gap:"1rem"
       },
       // 340: {
       //   padding: { left: "-200px" },
