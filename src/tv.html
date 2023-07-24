@@ -16,15 +16,14 @@
         src="/src/assets/tv/lines.svg"
         alt=""
       />
-     
-     
+
       <header class="mx-auto container mt-6 md:mt-10">
         <img class="mx-auto md:mx-1" src="/src/assets/logo/logo.webp" />
       </header>
 
-      <main class="mx-auto container pb-20 md:pb-5 ">
+      <main class="mx-auto container pb-20 md:pb-5">
         <div
-          class="mx-auto flex flex-col gap-4 items-center justify-center text-center "
+          class="mx-auto flex flex-col gap-4 items-center justify-center text-center"
         >
           <p class="text-center text-yellow md:text-2xl text-xl fa-format-500">
             نصب برای تلویزیون هوشمند
@@ -34,31 +33,28 @@
             تجربه کنید!
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div
+            class="w-full h-full flex justify-center items-center relative overflow-visible md:order-last"
+          >
+            <picture>
+              <source
+                srcset="/src/assets/tv/in-tv.webp"
+                media="(min-width:768px)"
+              />
+              <img class="h-full" src="/src/assets/tv/in-tv-sm.webp" alt="" />
+            </picture>
 
-            <div class="w-full h-full flex justify-center items-center relative overflow-visible  md:order-last">
-                <picture>
-                    <source
-                      srcset="/src/assets/tv/in-tv.webp"
-                      media="(min-width:768px)"
-                    />
-                    <img
-                      class="h-full "
-                      src="/src/assets/tv/in-tv-sm.webp"
-                      alt=""
-                    />
-                  </picture>
-                  
-                  <img
-                  class="absolute md:left-[18%] md:-top-[17%] left-0 -top-1/2 -z-20"
-                  src="/src/assets/tv/hover.svg"
-                  alt=""
-                />
-              
+            <img
+              class="absolute md:left-[18%] md:-top-[17%] left-0 -top-1/2 -z-20"
+              src="/src/assets/tv/hover.svg"
+              alt=""
+            />
+          </div>
 
-              </div>
-
-          <div class=" w-full h-full flex flex-col justify-center  md:order-first">
+          <div
+            class="w-full h-full flex flex-col justify-center md:order-first"
+          >
             <div
               class="flex flex-col md:justify-start justify-center gap-2 md:mb-6 mb-4"
             >
@@ -68,9 +64,13 @@
                 استفاده از ملودیفای را با خانواده تجربه کنید.
               </p>
             </div>
-            <a target="_blank" href="https://pwa.melodify.app" class="text-2xl font-poppins font-medium text-yellow underline underline-offset-8">pwa.melodify.app</a>
+            <a
+              target="_blank"
+              href="https://pwa.melodify.app"
+              class="text-2xl font-poppins font-medium text-yellow underline underline-offset-8"
+              >pwa.melodify.app</a
+            >
           </div>
-         
         </div>
       </main>
     </div>
@@ -188,7 +188,7 @@
       </div>
 
       <div
-        class="text-center mx-auto text-white text-base font-normal font-poppins pt-5"
+        class="text-center mx-auto text-white text-sm md:text-base font-normal font-poppins pt-5"
       >
         Copyright © 2023.All Rights Reserved By melodify
       </div>
