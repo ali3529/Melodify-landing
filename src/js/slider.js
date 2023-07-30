@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     direction: "ltr",
     drag: false,
     autoplay: true,
+    speed:900,
+    interval: 3000,
     width: "100%",
     perPage: 2.5,
     perMove: 1,
