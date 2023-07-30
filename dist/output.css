@@ -574,6 +574,10 @@ video {
   bottom: -8%;
 }
 
+.-left-\[27\%\]{
+  left: -27%;
+}
+
 .-top-1\/2{
   top: -50%;
 }
@@ -584,10 +588,6 @@ video {
 
 .left-0{
   left: 0px;
-}
-
-.left-\[-17\%\]{
-  left: -17%;
 }
 
 .left-\[3\%\]{
@@ -649,6 +649,10 @@ video {
 
 .mb-11{
   margin-bottom: 2.75rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mb-2{
@@ -794,8 +798,8 @@ video {
   height: 100%;
 }
 
-.min-h-\[235px\]{
-  min-height: 235px;
+.min-h-\[160px\]{
+  min-height: 160px;
 }
 
 .min-h-\[300px\]{
@@ -1041,9 +1045,19 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-gray1{
+  --tw-border-opacity: 1;
+  border-color: rgb(48 48 54 / var(--tw-border-opacity));
+}
+
 .border-gray2{
   --tw-border-opacity: 1;
   border-color: rgb(63 63 63 / var(--tw-border-opacity));
+}
+
+.border-b-yellow{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(242 201 76 / var(--tw-border-opacity));
 }
 
 .\!bg-gray5{
@@ -1221,11 +1235,6 @@ video {
   font-family: poppins;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-\[0\.625rem\]{
   font-size: 0.625rem;
 }
@@ -1275,6 +1284,10 @@ video {
   font-weight: 600;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .leading-3{
   line-height: .75rem;
 }
@@ -1314,14 +1327,6 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(242 201 76 / var(--tw-text-opacity));
-}
-
-.underline{
-  text-decoration-line: underline;
-}
-
-.underline-offset-8{
-  text-underline-offset: 8px;
 }
 
 .transition-colors{
@@ -1489,6 +1494,11 @@ video {
   height: 10px;
 }
 
+.before\:h-\[2px\]::before{
+  content: var(--tw-content);
+  height: 2px;
+}
+
 .before\:w-\[10px\]::before{
   content: var(--tw-content);
   width: 10px;
@@ -1497,6 +1507,11 @@ video {
 .before\:w-\[12px\]::before{
   content: var(--tw-content);
   width: 12px;
+}
+
+.before\:w-\[8px\]::before{
+  content: var(--tw-content);
+  width: 8px;
 }
 
 .before\:rotate-\[219deg\]::before{
@@ -1576,6 +1591,26 @@ video {
   }
 }
 
+@media (max-width: 1180px){
+  .max-\[1180px\]\:-left-\[14\%\]{
+    left: -14%;
+  }
+
+  .max-\[1180px\]\:bottom-0{
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 1130px){
+  .max-\[1130px\]\:-bottom-\[5\%\]{
+    bottom: -5%;
+  }
+
+  .max-\[1130px\]\:-left-\[10\%\]{
+    left: -10%;
+  }
+}
+
 @media (max-width: 1000px){
   .max-\[1000px\]\:pt-9{
     padding-top: 2.25rem;
@@ -1585,6 +1620,12 @@ video {
 @media (max-width: 600px){
   .max-\[600px\]\:bottom-\[20\%\]{
     bottom: 20%;
+  }
+}
+
+@media (max-width: 370px){
+  .max-\[370px\]\:bottom-\[45\%\]{
+    bottom: 45%;
   }
 }
 
@@ -1647,17 +1688,24 @@ video {
   }
 }
 
-@media (min-width: 570px){
-  .min-\[570px\]\:bottom-\[13\%\]{
-    bottom: 13%;
+@media (min-width: 500px){
+  .min-\[500px\]\:bottom-\[20\%\]{
+    bottom: 20%;
   }
+}
 
+@media (min-width: 570px){
   .min-\[570px\]\:left-0{
     left: 0px;
   }
 }
 
 @media (min-width: 640px){
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1753,6 +1801,14 @@ video {
 
   .md\:block{
     display: block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-16{
@@ -1898,6 +1954,10 @@ video {
     text-align: right;
   }
 
+  .md\:text-start{
+    text-align: start;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1928,11 +1988,27 @@ video {
   }
 }
 
-@media (min-width: 1150px){
-  .lg\:col-span-1{
-    grid-column: span 1 / span 1;
+@media (min-width: 774px){
+  .min-\[774px\]\:-bottom-\[5\%\]{
+    bottom: -5%;
   }
 
+  .min-\[774px\]\:-left-\[10\%\]{
+    left: -10%;
+  }
+}
+
+@media (min-width: 1130px){
+  .min-\[1130px\]\:-left-\[14\%\]{
+    left: -14%;
+  }
+
+  .min-\[1130px\]\:bottom-0{
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 1150px){
   .lg\:col-span-5{
     grid-column: span 5 / span 5;
   }
@@ -1973,16 +2049,8 @@ video {
     width: 14px;
   }
 
-  .lg\:grid-cols-5{
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:items-start{
-    align-items: flex-start;
   }
 
   .lg\:gap-3{
@@ -2016,6 +2084,20 @@ video {
 @media (min-width: 1180px){
   .min-\[1180px\]\:-left-\[11\%\]{
     left: -11%;
+  }
+}
+
+@media (min-width: 1280px){
+  .min-\[1280px\]\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .min-\[1280px\]\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .min-\[1280px\]\:items-start{
+    align-items: flex-start;
   }
 }
 
