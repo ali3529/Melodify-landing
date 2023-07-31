@@ -88,6 +88,9 @@
 .active-comment-slide .user-name {
   color: #f2c94c;
 }
+.active-comment-slide .comment-card {
+ gap: 1.5rem !important
+}
 
 .active-comment-slide ::before {
   content: " ";
@@ -98,8 +101,8 @@
   /* top: 0; */
   position: absolute;
   left: 40px;
-  animation: show 0.03s ease 0s 1 normal forwards;
-  transition: all 0.25s ease-in-out;
+  /* animation: show 0.03s ease 0s 1 normal forwards;
+  transition: all 0.25s ease-in-out; */
 }
 /* .inactive-comment-slide {
   transform: scale(1) !important;
@@ -110,7 +113,7 @@
  display: none !important;
 
 } */
-@keyframes show {
+/* @keyframes show {
   0% {
     opacity: 0;
     transform: scale(0.2);
@@ -125,7 +128,7 @@
     opacity: 1;
     transform: scale(1);
   }
-}
+} */
 /* .splide__slide--active {
   transform: scale(1.1);
   z-index: 1;
@@ -134,14 +137,16 @@
 @media only screen and (max-width: 768px) {
   #comments-splide .splide__slide::before {
     content: " ";
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     background-image: url("/src/assets/landing/cama.webp");
-    top: -22px;
+    top: -13px;
     position: absolute;
-    left: 40px;
+    left: 30px;
     animation: show 0.03s ease 0s 1 normal forwards;
     transition: all 0.25s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   #comments-splide .splide__slide .user-name {
     color: #f2c94c;
