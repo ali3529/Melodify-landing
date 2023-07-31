@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap%27%27');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+
+}
+
+/* body {
+  font-family: dana, tahoma;
+}
+@supports (font-variation-settings: normal) {
+  body {
+   font-family: 'dana_vf', poppins;
+  } 
+}*/
+/* 
+@font-face {
+  font-family: Dana;
+  src: url('dana2webGX.woff');
+} */
+
+@font-face {
+  font-family: "dana_vf";
+  src: url("/src/fonts/dana2webGX.woff") format("woff-variations"),
+  url("/src/fonts/danawebSP.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: dana;
+  src: url('/src/fonts/staticfonts/dana-regular.woff') format('woff');
+}
+@font-face {
+  font-family: dana;
+  src: url('/src/fonts/staticfonts/dana-bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+	font-family: dana-num;
+	font-style: normal;
+	font-weight: bold;
+	src: url('/src/fonts/staticfonts/eot/dana-fanum-bold.eot');
+	src: url('/src/fonts/staticfonts/eot/dana-fanum-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('/src/fonts/staticfonts/woff2/dana-fanum-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('/src/fonts/staticfonts/woff/dana-fanum-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana-num;
+	font-style: normal;
+	font-weight: normal;
+	src: url('/src/fonts/staticfonts/eot/dana-fanum-regular.eot');
+	src: url('/src/fonts/staticfonts/eot/dana-fanum-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('/src/fonts/staticfonts/woff2/dana-fanum-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('/src/fonts/staticfonts/woff/dana-fanum-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+.fa-format-250 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 250, 'FANU' 1, "DOTR" 0;
+}
+.fa-format-300 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 300, 'FANU' 1, "DOTR" 0;
+}
+.fa-format-380 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 380, 'FANU' 1, "DOTR" 0;
+}
+
+.fa-format-400 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 400, 'FANU' 1;
+}
+.fa-format-600 {
+  font-family: 'dana_vf';
+  font-variation-settings: "wght" 600, "DOTR" 0, 'FANU' 1
+}
+.fa-format-500 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 500, 'FANU' 1;
+}
+.fa-format-700 {
+  font-family: 'dana_vf';
+  font-variation-settings: 'wght' 700, 'FANU' 1;
+}
+.fa-format-600 {
+  font-family: "dana_vf";
+  font-variation-settings: "wght" 600, "FANU" 1;
+}
