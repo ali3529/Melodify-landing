@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide("#splide", {
     type: "loop",
@@ -48,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     speed: 1000,
     classes: {
-      pagination: "splide__pagination !flex !-bottom-[20px] ",
-      page: "splide__pagination__page !bg-gray5  !h-[5px] !w-[9px] !rounded-[100px] [&.is-active]:!bg-yellow [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
+      pagination: "splide__pagination !flex sm:!-bottom-0 ",
+      page: "splide__pagination__page !bg-gray5  !h-[5px] !w-[10px] !rounded-[100px] [&.is-active]:!bg-yellow  [&.is-active]:!opacity-100 [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
     },
     breakpoints: {
       768: {
