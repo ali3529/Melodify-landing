@@ -38,6 +38,8 @@ module.exports = {
       backgroundImage: {
         "header-image":
           "url('/src/assets/common/header/header_background.webp')",
+        "header-image-sm":
+          "url('/src/assets/common/header/header_background-sm.webp')",
       },
       listStyleImage: {
         chevronLeft: 'url("/src/assets/common/footer/ChevronLeft.svg")',
