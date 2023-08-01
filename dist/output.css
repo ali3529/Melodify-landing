@@ -1231,6 +1231,11 @@ video {
   padding-top: 1.5rem;
 }
 
+.ps-16{
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
+}
+
 .text-center{
   text-align: center;
 }
