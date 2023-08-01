@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.-bottom-\[20\%\]{
+  bottom: -20%;
+}
+
 .-bottom-\[8\%\]{
   bottom: -8%;
 }
@@ -576,6 +580,10 @@ video {
 
 .-left-\[27\%\]{
   left: -27%;
+}
+
+.-left-\[90\%\]{
+  left: -90%;
 }
 
 .-top-\[6\%\]{
@@ -745,6 +753,10 @@ video {
   height: 2rem;
 }
 
+.h-\[1000px\]{
+  height: 1000px;
+}
+
 .h-\[102px\]{
   height: 102px;
 }
@@ -830,6 +842,10 @@ video {
   width: 2rem;
 }
 
+.w-\[1000px\]{
+  width: 1000px;
+}
+
 .w-\[102px\]{
   width: 102px;
 }
@@ -852,6 +868,10 @@ video {
 
 .w-\[205px\]{
   width: 205px;
+}
+
+.w-\[279px\]{
+  width: 279px;
 }
 
 .w-\[45\.66\%\]{
@@ -890,10 +910,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[279px\]{
-  width: 279px;
 }
 
 .min-w-\[127\%\]{
@@ -1028,21 +1044,12 @@ video {
   border-width: 2px;
 }
 
-.border-\[8px\]{
-  border-width: 8px;
-}
-
 .border-b{
   border-bottom-width: 1px;
 }
 
 .border-solid{
   border-style: solid;
-}
-
-.border-\[\#000\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-gray1{
@@ -1063,11 +1070,6 @@ video {
 .\!bg-gray5{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(167 167 169 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-\[\#3C3737\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(60 55 55 / var(--tw-bg-opacity));
 }
 
 .bg-black{
@@ -1708,12 +1710,20 @@ video {
     bottom: -0px !important;
   }
 
-  .sm\:flex{
-    display: flex;
+  .sm\:-bottom-\[33\%\]{
+    bottom: -33%;
   }
 
-  .sm\:hidden{
-    display: none;
+  .sm\:-left-\[29\%\]{
+    left: -29%;
+  }
+
+  .sm\:h-auto{
+    height: auto;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 
   .sm\:text-2xl{
@@ -2001,6 +2011,24 @@ video {
 
   .md\:border-2{
     border-width: 2px;
+  }
+
+  .md\:border-\[8px\]{
+    border-width: 8px;
+  }
+
+  .md\:border-solid{
+    border-style: solid;
+  }
+
+  .md\:border-\[\#000\]{
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-\[\#3C3737\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(60 55 55 / var(--tw-bg-opacity));
   }
 
   .md\:px-0{
