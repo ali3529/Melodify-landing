@@ -46,6 +46,10 @@ module.exports = {
         chevronLeftYellow:
           'url("/src/assets/common/footer/chevronLeftYellow.svg")',
       },
+      boxShadow:{
+        
+        "platform-frame-shadow":" 0px 4px 40px 0px rgba(0, 0, 0, 0.40)"
+      }
     },
   },
   plugins: [],
