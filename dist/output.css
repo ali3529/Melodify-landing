@@ -2323,6 +2323,10 @@ video {
   width: 1.5rem !important;
 }
 
+.\[\&\.is-active\]\:\!transform-none.is-active{
+  transform: none !important;
+}
+
 .\[\&\.is-active\]\:\!bg-yellow.is-active{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(242 201 76 / var(--tw-bg-opacity)) !important;

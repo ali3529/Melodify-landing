@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     direction: "ltr",
     drag: false,
     autoplay: true,
-    speed:900,
+    speed: 900,
     interval: 3000,
     width: "100%",
     perPage: 2.5,
@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
   splide.mount();
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const commentsSplide = new Splide("#comments-splide", {
     direction: "rtl",
@@ -50,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 1000,
     classes: {
       pagination: "splide__pagination !flex sm:!-bottom-0 ",
-      page: "splide__pagination__page !bg-gray5  !h-[5px] !w-[10px] !rounded-[100px] [&.is-active]:!bg-yellow  [&.is-active]:!opacity-100 [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
+      page: "splide__pagination__page !bg-gray5  !h-[5px] !w-[10px] !rounded-[100px] [&.is-active]:!bg-yellow [&.is-active]:!transform-none [&.is-active]:!opacity-100 [&.is-active]:!w-6 [&.is-active]:!mx-[6px]",
     },
     breakpoints: {
       768: {
