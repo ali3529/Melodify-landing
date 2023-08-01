@@ -610,6 +610,10 @@ video {
   top: 0px;
 }
 
+.-left-\[67\%\]{
+  left: -67%;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -1040,6 +1044,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-\[6px\]{
+  gap: 6px;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1232,6 +1240,11 @@ video {
 .py-\[10px\]{
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .pb-20{
@@ -1798,6 +1811,14 @@ video {
     left: -29%;
   }
 
+  .sm\:left-0{
+    left: 0px;
+  }
+
+  .sm\:-left-\[27\%\]{
+    left: -27%;
+  }
+
   .sm\:h-auto{
     height: auto;
   }
@@ -1931,6 +1952,10 @@ video {
 
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:mb-16{
+    margin-bottom: 4rem;
   }
 
   .md\:block{
