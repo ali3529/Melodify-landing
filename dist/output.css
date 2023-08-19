@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap%27%27');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap%27%27");
 
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
@@ -727,6 +727,14 @@ video {
   display: none;
 }
 
+.aspect-\[164\/23\]{
+  aspect-ratio: 164/23;
+}
+
+.aspect-\[82\/57\.5\]{
+  aspect-ratio: 82/57.5;
+}
+
 .\!h-\[5px\]{
   height: 5px !important;
 }
@@ -785,10 +793,6 @@ video {
 
 .h-\[30px\]{
   height: 30px;
-}
-
-.h-\[46px\]{
-  height: 46px;
 }
 
 .h-\[507\.73px\]{
@@ -1177,7 +1181,7 @@ video {
 }
 
 .bg-dj-card-sm{
-  background-image: linear-gradient(180deg, rgba(48, 48, 48, 0.40) 0%, rgba(48, 48, 48, 0.30) 100%);
+  background-image: linear-gradient(180deg, rgba(48, 48, 48, 0.40) 0%, rgba(48, 48, 48, 0.30) 100%);;
 }
 
 .bg-dj-overlay-sm{
@@ -1354,10 +1358,6 @@ video {
   font-size: 0.625rem;
 }
 
-.text-\[20px\]{
-  font-size: 20px;
-}
-
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1415,14 +1415,14 @@ video {
   line-height: 26px;
 }
 
+.text-\[\#F2F2F2\]{
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
 .text-gray5{
   --tw-text-opacity: 1;
   color: rgb(167 167 169 / var(--tw-text-opacity));
-}
-
-.text-gray6{
-  --tw-text-opacity: 1;
-  color: rgb(176 176 181 / var(--tw-text-opacity));
 }
 
 .text-gray7{
@@ -1461,6 +1461,12 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.backdrop-blur-\[10\.5px\]{
+  --tw-backdrop-blur: blur(10.5px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1475,7 +1481,7 @@ video {
   transition-duration: 150ms;
 }
 
-*{
+* {
   box-sizing: border-box;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
@@ -1508,8 +1514,9 @@ video {
 @font-face {
   font-family: "dana_vf";
 
-  src: url("/src/fonts/dana2webGX.woff") format("woff-variations"),
-  url("/src/fonts/danawebSP.woff") format("woff");
+  src:
+    url("/src/fonts/dana2webGX.woff") format("woff-variations"),
+    url("/src/fonts/danawebSP.woff") format("woff");
 
   font-display: fallback;
 }
@@ -1517,13 +1524,13 @@ video {
 @font-face {
   font-family: dana;
 
-  src: url('/src/fonts/staticfonts/dana-regular.woff') format('woff');
+  src: url("/src/fonts/staticfonts/dana-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: dana;
 
-  src: url('/src/fonts/staticfonts/dana-bold.woff') format('woff');
+  src: url("/src/fonts/staticfonts/dana-bold.woff") format("woff");
 
   font-weight: 700;
 }
@@ -1535,11 +1542,15 @@ video {
 
   font-weight: bold;
 
-  src: url('/src/fonts/staticfonts/eot/dana-fanum-bold.eot');
+  src: url("/src/fonts/staticfonts/eot/dana-fanum-bold.eot");
 
-  src: url('/src/fonts/staticfonts/eot/dana-fanum-bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('/src/fonts/staticfonts/woff2/dana-fanum-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('/src/fonts/staticfonts/woff/dana-fanum-bold.woff') format('woff');
+  src:
+    url("/src/fonts/staticfonts/eot/dana-fanum-bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("/src/fonts/staticfonts/woff2/dana-fanum-bold.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url("/src/fonts/staticfonts/woff/dana-fanum-bold.woff") format("woff");
 
   /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
@@ -1551,53 +1562,172 @@ video {
 
   font-weight: normal;
 
-  src: url('/src/fonts/staticfonts/eot/dana-fanum-regular.eot');
+  src: url("/src/fonts/staticfonts/eot/dana-fanum-regular.eot");
 
-  src: url('/src/fonts/staticfonts/eot/dana-fanum-regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
-		 url('/src/fonts/staticfonts/woff2/dana-fanum-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
-		 url('/src/fonts/staticfonts/woff/dana-fanum-regular.woff') format('woff');
+  src:
+    url("/src/fonts/staticfonts/eot/dana-fanum-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("/src/fonts/staticfonts/woff2/dana-fanum-regular.woff2")
+      format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+      url("/src/fonts/staticfonts/woff/dana-fanum-regular.woff") format("woff");
 
   /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 
+/*Kalameh fonts*/
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-ExtraLight.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-SemiBold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-ExtraBold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  src: url("/src/fonts/kalameh/KalamehWeb(FaNum)-Black.woff2") format("woff2");
+}
+
 .fa-format-250 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 250, 'FANU' 1, "DOTR" 0;
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 250,
+    "FANU" 1,
+    "DOTR" 0;
 }
 
 .fa-format-300 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 300, 'FANU' 1, "DOTR" 0;
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 300,
+    "FANU" 1,
+    "DOTR" 0;
 }
 
 .fa-format-380 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 380, 'FANU' 1, "DOTR" 0;
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 380,
+    "FANU" 1,
+    "DOTR" 0;
 }
 
 .fa-format-400 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 400, 'FANU' 1;
-}
-
-.fa-format-600 {
-  font-family: 'dana_vf';
-  font-variation-settings: "wght" 600, "DOTR" 0, 'FANU' 1
-}
-
-.fa-format-500 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 500, 'FANU' 1;
-}
-
-.fa-format-700 {
-  font-family: 'dana_vf';
-  font-variation-settings: 'wght' 700, 'FANU' 1;
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 400,
+    "FANU" 1;
 }
 
 .fa-format-600 {
   font-family: "dana_vf";
-  font-variation-settings: "wght" 600, "FANU" 1;
+  font-variation-settings:
+    "wght" 600,
+    "DOTR" 0,
+    "FANU" 1;
+}
+
+.fa-format-500 {
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 500,
+    "FANU" 1;
+}
+
+.fa-format-700 {
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 700,
+    "FANU" 1;
+}
+
+.fa-format-600 {
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 600,
+    "FANU" 1;
 }
 
 .before\:absolute::before{
@@ -1697,6 +1827,10 @@ video {
   content: var(--tw-content);
 }
 
+.hover\:bg-\[\#32b4f4eb\]:hover{
+  background-color: #32b4f4eb;
+}
+
 .hover\:bg-gray4:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
@@ -1711,6 +1845,11 @@ video {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(242 201 76 / var(--tw-border-opacity));
+}
+
+.active\:bg-\[\#25A4E2\]:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 164 226 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:fill-yellow{
@@ -1868,12 +2007,20 @@ video {
     left: -29%;
   }
 
-  .sm\:h-10{
-    height: 2.5rem;
+  .sm\:aspect-\[125\/14\]{
+    aspect-ratio: 125/14;
   }
 
-  .sm\:h-14{
-    height: 3.5rem;
+  .sm\:aspect-\[125\/73\.5\]{
+    aspect-ratio: 125/73.5;
+  }
+
+  .sm\:aspect-\[157\/200\]{
+    aspect-ratio: 157/200;
+  }
+
+  .sm\:h-10{
+    height: 2.5rem;
   }
 
   .sm\:h-\[200px\]{
@@ -1890,10 +2037,6 @@ video {
 
   .sm\:w-10{
     width: 2.5rem;
-  }
-
-  .sm\:w-\[157px\]{
-    width: 157px;
   }
 
   .sm\:w-\[30px\]{
@@ -1913,12 +2056,12 @@ video {
     width: max-content;
   }
 
-  .sm\:gap-4{
-    gap: 1rem;
+  .sm\:gap-3{
+    gap: 0.75rem;
   }
 
-  .sm\:gap-6{
-    gap: 1.5rem;
+  .sm\:gap-4{
+    gap: 1rem;
   }
 
   .sm\:gap-8{
@@ -1927,6 +2070,10 @@ video {
 
   .sm\:gap-\[116px\]{
     gap: 116px;
+  }
+
+  .sm\:gap-\[32px\]{
+    gap: 32px;
   }
 
   .sm\:rounded-\[100px\]{
@@ -1949,9 +2096,17 @@ video {
     padding: 2rem;
   }
 
+  .sm\:pb-8{
+    padding-bottom: 2rem;
+  }
+
   .sm\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-\[18px\]{
+    font-size: 18px;
   }
 
   .sm\:text-\[26px\]{
@@ -1971,6 +2126,12 @@ video {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:backdrop-blur-\[21px\]{
+    --tw-backdrop-blur: blur(21px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
 
   .before\:sm\:h-1::before{
@@ -2097,6 +2258,10 @@ video {
 
   .md\:h-20{
     height: 5rem;
+  }
+
+  .md\:h-\[104px\]{
+    height: 104px;
   }
 
   .md\:h-\[152px\]{
@@ -2503,6 +2668,85 @@ video {
 
   .min-\[1280px\]\:items-start{
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:h-\[max\(13\.888vw\2c 200px\)\]{
+    height: max(13.888vw,200px);
+  }
+
+  .\32xl\:h-\[max\(2\.083vw\2c 30px\)\]{
+    height: max(2.083vw,30px);
+  }
+
+  .\32xl\:h-\[max\(2\.777vw\2c 40px\)\]{
+    height: max(2.777vw,40px);
+  }
+
+  .\32xl\:h-\[max\(7\.222vw\2c 104px\)\]{
+    height: max(7.222vw,104px);
+  }
+
+  .\32xl\:w-\[max\(2\.083vw\2c 30px\)\]{
+    width: max(2.083vw,30px);
+  }
+
+  .\32xl\:w-\[max\(2\.777vw\2c 40px\)\]{
+    width: max(2.777vw,40px);
+  }
+
+  .\32xl\:w-\[max\(34\.72222vw\2c 500px\)\]{
+    width: max(34.72222vw,500px);
+  }
+
+  .\32xl\:gap-\[max\(0\.8333vw\2c 12px\)\]{
+    gap: max(0.8333vw,12px);
+  }
+
+  .\32xl\:gap-\[max\(1\.111vw\2c 16px\)\]{
+    gap: max(1.111vw,16px);
+  }
+
+  .\32xl\:gap-\[max\(1\.666vw\2c 24px\)\]{
+    gap: max(1.666vw,24px);
+  }
+
+  .\32xl\:gap-\[max\(2\.222vw\2c 32px\)\]{
+    gap: max(2.222vw,32px);
+  }
+
+  .\32xl\:gap-\[max\(8\.055vw\2c 116px\)\]{
+    gap: max(8.055vw,116px);
+  }
+
+  .\32xl\:py-\[6\.944vw\]{
+    padding-top: 6.944vw;
+    padding-bottom: 6.944vw;
+  }
+
+  .\32xl\:pb-\[max\(1\.666vw\2c 24px\)\]{
+    padding-bottom: max(1.666vw,24px);
+  }
+
+  .\32xl\:pt-\[max\(0\.833vw\2c 12px\)\]{
+    padding-top: max(0.833vw,12px);
+  }
+
+  .\32xl\:text-\[max\(1\.111vw\2c 16px\)\]{
+    font-size: max(1.111vw,16px);
+  }
+
+  .\32xl\:text-\[max\(1\.25vw\2c 18px\)\]{
+    font-size: max(1.25vw,18px);
+  }
+
+  .\32xl\:text-\[max\(1\.805vw\2c 26px\)\]{
+    font-size: max(1.805vw,26px);
+  }
+
+  .\32xl\:leading-\[max\(2vw\2c 24px\)\]{
+    line-height: max(2vw,24px);
   }
 }
 

@@ -13,17 +13,17 @@
     class="relative flex flex-col justify-between min-h-screen overflow-hidden bg-black"
   >
     <div
-      class="h-full w-full min-w-full min-h-screen relative flex flex-col justify-center bg-dj-background-sm sm:bg-dj-background bg-no-repeat bg-cover sm:gap-[116px] gap-[131px]"
+      class="h-full w-full min-w-full min-h-screen relative flex flex-col justify-center bg-dj-background-sm sm:bg-dj-background bg-no-repeat bg-cover sm:gap-[116px] 2xl:gap-[max(8.055vw,116px)] gap-[131px] 2xl:py-[6.944vw]"
     >
       <div
         class="w-full h-full absolute sm:bg-dj-overlay bg-dj-overlay-sm"
       ></div>
       <!-- ANCHOR MAIN -->
       <main
-        class="mx-auto z-10 flex flex-col gap-6 sm:gap-8 items-center sm:w-[500px] w-full px-4"
+        class="mx-auto z-10 flex flex-col gap-6 sm:gap-[32px] 2xl:gap-[max(2.222vw,32px)] items-center sm:w-[500px] 2xl:w-[max(34.72222vw,500px)] sm:aspect-[125/73.5] aspect-[82/57.5] w-full px-4"
       >
         <div
-          class="flex justify-center w-[94px] h-[120px] sm:w-[157px] sm:h-[200px] mx-auto"
+          class="flex justify-center w-[94px] h-[120px] sm:aspect-[157/200] sm:w-auto sm:h-[200px] 2xl:h-[max(13.888vw,200px)] mx-auto"
         >
           <img
             class="w-full h-full"
@@ -32,54 +32,56 @@
             srcset=""
           />
         </div>
-        <div class="flex flex-col gap-4 sm:gap-6 w-full sm:w-max">
+        <div
+          class="flex flex-col gap-4 sm:gap-8 2xl:gap-[max(1.666vw,24px)] w-full sm:w-max"
+        >
           <div
-            class="sm:w-[500px] w-full rounded-[20px] backdrop-blur-[21px] bg-dj-card-sm sm:bg-dj-card p-6 sm:p-8"
+            class="sm:w-[500px] 2xl:w-[max(34.72222vw,500px)] sm:aspect-[125/73.5] aspect-[82/57.5] acpe w-full rounded-[20px] backdrop-blur-[10.5px] sm:backdrop-blur-[21px] bg-dj-card-sm sm:bg-dj-card"
           >
-            <h1
-              class="text-yellow font-kalameh text-[20px] sm:text-[26px] font-semibold text-center"
-            >
-              همکاری با دی‌جی ها
-            </h1>
-            <p
-              class="text-center text-gray6 text-sm pt-3 pb-6 sm:text-lg fa-format-500"
-            >
-              برای همکاری با ملودیفای دکمه ارتباط در تلگرام را بزنید و موارد زیر
-              را ارسال کنید
-            </p>
-            <ul class="w-max mx-auto flex flex-col gap-[14px] sm:gap-4">
-              <li
-                class="text-gray6 text-base fa-format-500 flex items-center gap-3 sm:gap-4"
+            <div class="p-6 sm:p-8 h-full flex flex-col justify-center">
+              <h1
+                class="text-yellow font-kalameh text-xl sm:text-[26px] 2xl:text-[max(1.805vw,26px)] font-medium text-center"
               >
-                <span
-                  class="bg-[#25a4e233] rounded-full w-[30px] h-[30px] sm:w-10 sm:h-10 flex justify-center items-center text-center text-white text-sm sm:text-lg fa-format-500"
-                >
-                  1
-                </span>
-                نام هنری
-              </li>
-
-              <li
-                class="text-gray6 text-base fa-format-500 flex items-center gap-3 sm:gap-4"
+                همکاری با دی‌جی ها
+              </h1>
+              <p
+                class="text-center text-[#F2F2F2] text-sm pt-3 2xl:pt-[max(0.833vw,12px)] sm:pb-8 2xl:pb-[max(1.666vw,24px)] sm:text-[18px] 2xl:text-[max(1.25vw,18px)] leading-6 2xl:leading-[max(2vw,24px)] fa-format-400"
               >
-                <span
-                  class="bg-[#25a4e233] rounded-full w-[30px] h-[30px] sm:w-10 sm:h-10 flex justify-center items-center text-center text-white text-sm sm:text-lg fa-format-500"
+                برای همکاری با ملودیفای دکمه ارتباط در تلگرام را بزنید و موارد
+                زیر را ارسال کنید
+              </p>
+              <ul
+                class="w-max mx-auto flex flex-col gap-[14px] sm:gap-4 2xl:gap-[max(1.111vw,16px)]"
+              >
+                <li
+                  class="text-[#F2F2F2] sm:text-base 2xl:text-[max(1.111vw,16px)] text-sm fa-format-400 flex items-center gap-3 sm:gap-4"
                 >
-                  2
-                </span>
-                یک یا چند نمونه پادکست از خود
-              </li>
-            </ul>
+                  <span
+                    class="bg-[#25a4e233] rounded-full w-[30px] h-[30px] sm:w-10 2xl:w-[max(2.777vw,40px)] sm:h-10 2xl:h-[max(2.777vw,40px)] flex justify-center items-center text-center text-white text-sm sm:text-[18px] 2xl:text-[max(1.25vw,18px)] fa-format-400"
+                  >
+                    1
+                  </span>
+                  نام هنری
+                </li>
 
-            <p />
-
-            <p></p>
+                <li
+                  class="text-[#F2F2F2] sm:text-base 2xl:text-[max(1.111vw,16px)] text-sm fa-format-400 flex items-center gap-3 sm:gap-4"
+                >
+                  <span
+                    class="bg-[#25a4e233] rounded-full w-[30px] h-[30px] sm:w-10 2xl:w-[max(2.777vw,40px)] sm:h-10 2xl:h-[max(2.777vw,40px)] flex justify-center items-center text-center text-white text-sm sm:text-[18px] 2xl:text-[max(1.25vw,18px)] fa-format-400"
+                  >
+                    2
+                  </span>
+                  یک یا چند نمونه پادکست از خود
+                </li>
+              </ul>
+            </div>
           </div>
           <button
-            class="w-full sm:h-14 h-[46px] rounded-3xl sm:rounded-[100px] gap-3 bg-[#25A4E2] flex items-center justify-center"
+            class="w-full sm:aspect-[125/14] aspect-[164/23] rounded-3xl sm:rounded-[100px] gap-3 sm:gap-3 2xl:gap-[max(0.8333vw,12px)] bg-[#25A4E2] hover:bg-[#32b4f4eb] active:bg-[#25A4E2] transition-colors flex items-center justify-center"
           >
             <svg
-              class="sm:w-[30px] sm:h-[30px] w-6 h-6"
+              class="sm:w-[30px] 2xl:w-[max(2.083vw,30px)] sm:h-[30px] 2xl:h-[max(2.083vw,30px)] w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -104,7 +106,9 @@
                 </clipPath>
               </defs>
             </svg>
-            <p class="text-center text-white text-base fa-format-500">
+            <p
+              class="text-center text-white text-base sm:text-base 2xl:text-[max(1.111vw,16px)] fa-format-500"
+            >
               ارتباط در تلگرام
             </p>
           </button>
@@ -112,7 +116,7 @@
       </main>
 
       <!-- ANCHOR FOOTER -->
-      <footer class="mx-auto z-10">
+      <footer class="mx-auto z-10 md:h-[104px] 2xl:h-[max(7.222vw,104px)]">
         <picture>
           <source
             srcset="/src/assets/dj/dj-logo.webp"

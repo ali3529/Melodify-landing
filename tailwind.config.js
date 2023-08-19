@@ -49,7 +49,7 @@ module.exports = {
         "dj-card":
           "linear-gradient(180deg, rgba(48, 48, 48, 0.60) 0%, rgba(48, 48, 48, 0.60) 100%)",
         "dj-card-sm":
-          "linear-gradient(180deg, rgba(48, 48, 48, 0.40) 0%, rgba(48, 48, 48, 0.30) 100%)",
+          "linear-gradient(180deg, rgba(48, 48, 48, 0.40) 0%, rgba(48, 48, 48, 0.30) 100%);",
       },
       listStyleImage: {
         chevronLeft: 'url("/src/assets/common/footer/ChevronLeft.svg")',
