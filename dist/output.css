@@ -1455,12 +1455,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.backdrop-blur-\[21px\]{
-  --tw-backdrop-blur: blur(21px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
 .backdrop-blur-\[10\.5px\]{
   --tw-backdrop-blur: blur(10.5px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -2442,11 +2436,6 @@ video {
     padding-bottom: 200px;
   }
 
-  .md\:pe-28{
-    -webkit-padding-end: 7rem;
-            padding-inline-end: 7rem;
-  }
-
   .md\:ps-0{
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
@@ -2524,6 +2513,13 @@ video {
 
   .min-\[774px\]\:-left-\[10\%\]{
     left: -10%;
+  }
+}
+
+@media (min-width: 900px){
+  .min-\[900px\]\:pe-28{
+    -webkit-padding-end: 7rem;
+            padding-inline-end: 7rem;
   }
 }
 
@@ -2616,6 +2612,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .lg\:pe-0{
+    -webkit-padding-end: 0px;
+            padding-inline-end: 0px;
+  }
+
   .lg\:ps-0{
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
@@ -2647,6 +2648,13 @@ video {
   }
 }
 
+@media (min-width: 1170px){
+  .min-\[1170px\]\:pe-\[20px\]{
+    -webkit-padding-end: 20px;
+            padding-inline-end: 20px;
+  }
+}
+
 @media (min-width: 1180px){
   .min-\[1180px\]\:-left-\[11\%\]{
     left: -11%;
@@ -2654,6 +2662,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+
   .min-\[1280px\]\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -2668,6 +2680,13 @@ video {
 
   .min-\[1280px\]\:items-start{
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 1400px){
+  .min-\[1400px\]\:pe-28{
+    -webkit-padding-end: 7rem;
+            padding-inline-end: 7rem;
   }
 }
 
