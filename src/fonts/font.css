@@ -1,16 +1,75 @@
 @font-face {
-    font-family: "Dana";
-    src: url("/fonts/dana2webGX.woff") format("woff-variations"),
+  font-family: "Dana";
+  src:
+    url("/fonts/dana2webGX.woff") format("woff-variations"),
     url("/fonts/danawebSP.woff") format("woff");
-    font-display: fallback;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: dana;
-    src: url('/src/fonts/staticfonts/dana-regular.woff') format('woff');
+  font-family: dana;
+  src: url("/src/fonts/staticfonts/dana-regular.woff") format("woff");
 }
 @font-face {
-    font-family: dana;
-    src: url('/src/fonts/staticfonts/dana-bold.woff') format('woff');
-    font-weight: 700;
+  font-family: dana;
+  src: url("/src/fonts/staticfonts/dana-bold.woff") format("woff");
+  font-weight: 700;
+}
+
+/*Kalameh fonts*/
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-ExtraLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Kalameh";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/kalameh/KalamehWeb(FaNum)-Black.woff2") format("woff2");
 }
