@@ -44,7 +44,7 @@ module.exports = {
           "linear-gradient(180deg, rgba(33, 33, 33, 0.30) 0%, rgba(33, 33, 33, 0.70) 28.31%, rgba(33, 33, 33, 0.85) 49.30%, rgba(33, 33, 33, 0.98) 100%);",
         "dj-overlay-sm":
           "linear-gradient(180deg, rgba(33, 33, 33, 0.20) 0%, rgba(33, 33, 33, 0.60) 28.31%, rgba(33, 33, 33, 0.80) 49.30%, rgba(33, 33, 33, 0.90) 100%);",
-        "dj-background": "url('/src/assets/dj/dj-background.png')",
+        "dj-background": "url('/src/assets/dj/dj-background.webp')",
         "dj-background-sm": "url('/src/assets/dj/dj-background-sm.png')",
         "dj-card":
           "linear-gradient(180deg, rgba(48, 48, 48, 0.60) 0%, rgba(48, 48, 48, 0.60) 100%)",
