@@ -962,6 +962,10 @@ video {
   max-width: 1170px;
 }
 
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
 .max-w-\[560px\]{
   max-width: 560px;
 }
@@ -1323,6 +1327,10 @@ video {
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-\[18\.5px\]{
+  padding-top: 18.5px;
 }
 
 .text-center{
@@ -2009,16 +2017,20 @@ video {
     aspect-ratio: 125/73.5;
   }
 
-  .sm\:aspect-\[157\/200\]{
-    aspect-ratio: 157/200;
+  .sm\:aspect-\[128\.77\/164\]{
+    aspect-ratio: 128.77/164;
+  }
+
+  .sm\:aspect-\[500\/272\]{
+    aspect-ratio: 500/272;
   }
 
   .sm\:h-10{
     height: 2.5rem;
   }
 
-  .sm\:h-\[200px\]{
-    height: 200px;
+  .sm\:h-\[164px\]{
+    height: 164px;
   }
 
   .sm\:h-\[30px\]{
@@ -2050,6 +2062,10 @@ video {
     width: max-content;
   }
 
+  .sm\:max-w-none{
+    max-width: none;
+  }
+
   .sm\:gap-3{
     gap: 0.75rem;
   }
@@ -2062,12 +2078,12 @@ video {
     gap: 2rem;
   }
 
-  .sm\:gap-\[116px\]{
-    gap: 116px;
-  }
-
   .sm\:gap-\[32px\]{
     gap: 32px;
+  }
+
+  .sm\:gap-\[56px\]{
+    gap: 56px;
   }
 
   .sm\:rounded-\[100px\]{
@@ -2075,7 +2091,7 @@ video {
   }
 
   .sm\:bg-dj-background{
-    background-image: url('/src/assets/dj/dj-background.png');
+    background-image: url('/src/assets/dj/dj-background.webp');
   }
 
   .sm\:bg-dj-card{
@@ -2090,8 +2106,17 @@ video {
     padding: 2rem;
   }
 
-  .sm\:pb-8{
-    padding-bottom: 2rem;
+  .sm\:px-\[53px\]{
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .sm\:pb-4{
+    padding-bottom: 1rem;
+  }
+
+  .sm\:pt-\[42px\]{
+    padding-top: 42px;
   }
 
   .sm\:text-2xl{
@@ -2120,12 +2145,6 @@ video {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:backdrop-blur-\[21px\]{
-    --tw-backdrop-blur: blur(21px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
 
   .before\:sm\:h-1::before{
@@ -2735,8 +2754,8 @@ video {
     gap: max(2.222vw,32px);
   }
 
-  .\32xl\:gap-\[max\(8\.055vw\2c 116px\)\]{
-    gap: max(8.055vw,116px);
+  .\32xl\:gap-\[max\(8\.055vw\2c 56px\)\]{
+    gap: max(8.055vw,56px);
   }
 
   .\32xl\:py-\[6\.944vw\]{
@@ -2744,12 +2763,12 @@ video {
     padding-bottom: 6.944vw;
   }
 
-  .\32xl\:pb-\[max\(1\.666vw\2c 24px\)\]{
-    padding-bottom: max(1.666vw,24px);
+  .\32xl\:pb-\[max\(1\.111vw\2c 16px\)\]{
+    padding-bottom: max(1.111vw,16px);
   }
 
-  .\32xl\:pt-\[max\(0\.833vw\2c 12px\)\]{
-    padding-top: max(0.833vw,12px);
+  .\32xl\:pt-\[max\(0\.833vw\2c 18\.5px\)\]{
+    padding-top: max(0.833vw,18.5px);
   }
 
   .\32xl\:text-\[max\(1\.111vw\2c 16px\)\]{
