@@ -37,17 +37,19 @@
             تجربه کنید!
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
           <div
-            class="w-full h-full flex justify-center items-center relative overflow-visible md:order-last"
+            class="w-full h-full flex justify-end items-center relative overflow-visible md:order-last md:col-span-6 md:col-start-6"
           >
-            <picture>
-              <source
-                srcset="/src/assets/tv/in-tv.webp"
-                media="(min-width:768px)"
-              />
-              <img class="h-full" src="/src/assets/tv/in-tv-sm.webp" alt="" />
-            </picture>
+            <div class="-me-32">
+              <picture>
+                <source
+                  srcset="/src/assets/tv/in-tv.webp"
+                  media="(min-width:768px)"
+                />
+                <img class="h-full" src="/src/assets/tv/in-tv-sm.webp" alt="" />
+              </picture>
+            </div>
 
             <!-- <img
              
@@ -123,7 +125,7 @@
           </div>
 
           <div
-            class="w-full h-full flex flex-col justify-center md:order-first"
+            class="w-full h-full flex flex-col justify-center md:order-first md:col-span-5"
           >
             <div
               class="flex flex-col md:justify-start justify-center gap-2 md:mb-6 mb-4"
@@ -157,130 +159,146 @@
     </div>
 
     <!-- ANCHOR FOOTER -->
-    <footer class="bg-gray4 w-full pt-6 md:pt-[52px] md:pb-5 pb-3 min-h-[300px]">
-      <div class="mx-auto max-w-[1170px]">
-      <div class="container mx-auto border-b border-gray2 pb-6 h-full">
+    <footer
+      class="bg-gray4 w-full pt-6 md:pt-[52px] md:pb-5 pb-3 min-h-[300px]"
+    >
+      <div class="md:mx-auto max-w-[1170px] mx-[22px]">
+        <div class="container mx-auto border-b border-gray2 pb-6 h-full">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 min-[1280px]:grid-cols-12 min-[1280px]:gap-[30px] gap-4 min-h-[160px] px-2"
+          >
+            <div class="md:col-span-3 min-[1280px]:col-span-3 col-span-2">
+              <div
+                class="flex flex-col items-center min-[1280px]:items-start gap-4 mb-4 md:mb-0"
+              >
+                <img
+                  onclick="goToPage('index.html')"
+                  class="md:w-[185px] w-[120px] object-cover"
+                  src="/src/assets/logo/logo_size4.webp"
+                  alt=""
+                />
+                <p
+                  class="text-white text-sm fa-format-300 text-center md:text-right leading-6"
+                >
+                  آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با
+                  ملودیفای تجربه کنید!
+                </p>
+              </div>
+            </div>
 
-         <div
-           class="grid grid-cols-2 md:grid-cols-3 min-[1280px]:grid-cols-12  gap-4 min-h-[160px]"
-         >
-           <div class="md:col-span-3 min-[1280px]:col-span-3 col-span-2">
-             <div class="flex flex-col items-center min-[1280px]:items-start gap-4 mb-4 md:mb-0">
-               <img
-                 class="md:w-[185px] w-[120px] object-cover"
-                 src="/src/assets/logo/logo_size4.webp"
-                 alt=""
-               />
-               <p
-                 class="text-white text-sm fa-format-300 text-center md:text-right leading-6"
-               >
-                 آسان ترین و متفاوت ترین راه دانلود و پخش آفلاین موسیقی را با
-                 ملودیفای تجربه کنید!
-               </p>
-             </div>
-           </div>
- 
-           <ul class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white">
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               گوگل پلی استور
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               آیفون
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               ویندوز
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               لینوکس
-             </li>
-           </ul>
- 
-           <ul class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white">
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               دانلود مستقیم
-             </li>
-             <li
-             onclick="goToPage('tv.html')"
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               تلوزیون هوشمند
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               مک
-             </li>
-           </ul>
- 
-           <ul class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white">
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               قوانین و شرایط استفاده
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               حریم خصوصی
-             </li>
-             <li
-               class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max pe-7 ps-5 cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
-             >
-               DMCA
-             </li>
-           </ul>
-           <div class="md:col-span-3 min-[1280px]:col-span-3 col-span-2">
-             <div class="flex flex-col gap-3 ps-3 md:ps-0">
-               <div
-                 class="flex gap-3 transition-colors text-gray7 hover:text-yellow cursor-pointer"
-               >
-                 <img
-                   class="w-5 h-5"
-                   src="/src/assets/common/footer/email_icon.svg"
-                   alt=""
-                 />
-                 <p class="font-poppins font-normal text-sm">
-                   @melodify.group@gmail.com
-                 </p>
-               </div>
- 
-               <div
-                 class="flex gap-3 transition-colors text-gray7 hover:text-yellow cursor-pointer"
-               >
-                 <img
-                   class="w-5 h-5"
-                   src="/src/assets/common/footer/Instagram.svg"
-                   alt=""
-                 />
-                 <p class="font-poppins font-normal text-sm">
-                   @melodify.official
-                 </p>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
+            <ul
+              class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white"
+            >
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                گوگل پلی استور
+              </li>
+              <li
+                onclick="goToPage('ios.html')"
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                آیفون
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                ویندوز
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                لینوکس
+              </li>
+            </ul>
+
+            <ul
+              class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white"
+            >
+              <li
+                onclick="goToPage('dj.html')"
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                ارسال آثار دی‌جی ها
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                دانلود مستقیم
+              </li>
+              <li
+                onclick="goToPage('tv.html')"
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                تلوزیون هوشمند
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                مک
+              </li>
+            </ul>
+
+            <ul
+              class="flex flex-col md:gap-3 gap-2 min-[1280px]:col-span-2 text-white"
+            >
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                قوانین و شرایط استفاده
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                حریم خصوصی
+              </li>
+              <li
+                class="leading-6 text-sm md:text-base fa-format-400 transition-colors hover:text-yellow hover:before:border-yellow w-max cursor-pointer before:relative before:border-solid before:border-r-2 before:border-t-2 before:content-[''] before:inline-block before:h-[10px] before:w-[10px] before:left-2 before:top-[5px] before:rotate-[219deg] before:align-top"
+              >
+                DMCA
+              </li>
+            </ul>
+            <div class="md:col-span-3 min-[1280px]:col-span-2 col-span-2">
+              <div class="flex flex-col gap-3 -ms-2 md:ps-0">
+                <div
+                  class="flex gap-3 transition-colors text-gray7 hover:text-yellow cursor-pointer"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="/src/assets/common/footer/email_icon.svg"
+                    alt=""
+                  />
+                  <p class="font-poppins font-normal text-sm">
+                    @melodify.group@gmail.com
+                  </p>
+                </div>
+
+                <div
+                  class="flex gap-3 transition-colors text-gray7 hover:text-yellow cursor-pointer"
+                >
+                  <img
+                    class="w-5 h-5"
+                    src="/src/assets/common/footer/Instagram.svg"
+                    alt=""
+                  />
+                  <p class="font-poppins font-normal text-sm">
+                    @melodify.official
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div
-        class="text-center mx-auto text-white text-xs  md:text-base font-normal font-poppins  md:pt-5 pt-3"
+        class="text-center mx-auto text-white text-xs md:text-base font-normal font-poppins md:pt-5 pt-3"
       >
         Copyright © 2023.All Rights Reserved By melodify
       </div>
-
     </footer>
-    <!-- ANCHOR script -->
 
+    <!-- ANCHOR script -->
     <script>
       function goToPage(path) {
         window.location.href = path;
