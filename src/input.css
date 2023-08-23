@@ -32,7 +32,7 @@
 @font-face {
   font-family: "dana_vf";
   src:
-    url("/src/fonts/dana2webGX.woff") format("woff-variations"),
+    url("/src/fonts/danawebGX.woff") format("woff-variations"),
     url("/src/fonts/danawebSP.woff") format("woff");
   font-display: fallback;
 }
