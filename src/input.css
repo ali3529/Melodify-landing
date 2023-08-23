@@ -162,17 +162,23 @@
     "wght" 400,
     "FANU" 1;
 }
+.fa-format-500 {
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 500,
+    "FANU" 1;
+}
+.fa-format-550 {
+  font-family: "dana_vf";
+  font-variation-settings:
+    "wght" 550,
+    "FANU" 1;
+}
 .fa-format-600 {
   font-family: "dana_vf";
   font-variation-settings:
     "wght" 600,
     "DOTR" 0,
-    "FANU" 1;
-}
-.fa-format-500 {
-  font-family: "dana_vf";
-  font-variation-settings:
-    "wght" 500,
     "FANU" 1;
 }
 .fa-format-700 {
