@@ -1337,6 +1337,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-7{
+  padding-bottom: 1.75rem;
+}
+
+.pb-\[27px\]{
+  padding-bottom: 27px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -2786,6 +2794,26 @@ video {
     height: max(5.7776vw,104px);
   }
 
+  .\32xl\:h-\[max\(1\.6664vw\2c 36px\)\]{
+    height: max(1.6664vw,36px);
+  }
+
+  .\32xl\:h-\[max\(11\.1104vw\2c 240px\)\]{
+    height: max(11.1104vw,240px);
+  }
+
+  .\32xl\:h-\[max\(2\.2216vw\2c 48px\)\]{
+    height: max(2.2216vw,48px);
+  }
+
+  .\32xl\:h-\[max\(2\.2216vw\2c 57\.6px\)\]{
+    height: max(2.2216vw,57.6px);
+  }
+
+  .\32xl\:h-\[max\(5\.7776vw\2c 125px\)\]{
+    height: max(5.7776vw,125px);
+  }
+
   .\32xl\:w-\[max\(2\.083vw\2c 30px\)\]{
     width: max(2.083vw,30px);
   }
@@ -2808,6 +2836,26 @@ video {
 
   .\32xl\:w-\[max\(1\.6664vw\2c 30px\)\]{
     width: max(1.6664vw,30px);
+  }
+
+  .\32xl\:w-\[max\(27\.777776vw\2c 600px\)\]{
+    width: max(27.777776vw,600px);
+  }
+
+  .\32xl\:w-\[max\(1\.6664vw\2c 36px\)\]{
+    width: max(1.6664vw,36px);
+  }
+
+  .\32xl\:w-\[max\(2\.2216vw\2c 48px\)\]{
+    width: max(2.2216vw,48px);
+  }
+
+  .\32xl\:w-\[max\(2\.2216vw\2c 57\.6px\)\]{
+    width: max(2.2216vw,57.6px);
+  }
+
+  .\32xl\:w-\[max\(27\.777776vw\2c 7200px\)\]{
+    width: max(27.777776vw,7200px);
   }
 
   .\32xl\:gap-\[max\(0\.8333vw\2c 12px\)\]{
@@ -2846,6 +2894,26 @@ video {
     gap: max(6.444vw,56px);
   }
 
+  .\32xl\:gap-\[max\(0\.8333vw\2c 14px\)\]{
+    gap: max(0.8333vw,14px);
+  }
+
+  .\32xl\:gap-\[max\(0\.8888vw\2c 23px\)\]{
+    gap: max(0.8888vw,23px);
+  }
+
+  .\32xl\:gap-\[max\(1\.3328vw\2c 29px\)\]{
+    gap: max(1.3328vw,29px);
+  }
+
+  .\32xl\:gap-\[max\(1\.7776vw\2c 38px\)\]{
+    gap: max(1.7776vw,38px);
+  }
+
+  .\32xl\:gap-\[max\(6\.444vw\2c 67px\)\]{
+    gap: max(6.444vw,67px);
+  }
+
   .\32xl\:py-\[6\.944vw\]{
     padding-top: 6.944vw;
     padding-bottom: 6.944vw;
@@ -2865,6 +2933,14 @@ video {
 
   .\32xl\:pt-\[max\(0\.6664vw\2c 18\.5px\)\]{
     padding-top: max(0.6664vw,18.5px);
+  }
+
+  .\32xl\:pb-\[max\(0\.8888vw\2c 19px\)\]{
+    padding-bottom: max(0.8888vw,19px);
+  }
+
+  .\32xl\:pt-\[max\(0\.6664vw\2c 22\.2px\)\]{
+    padding-top: max(0.6664vw,22.2px);
   }
 
   .\32xl\:text-\[max\(1\.111vw\2c 16px\)\]{
@@ -2891,12 +2967,36 @@ video {
     font-size: max(1vw,18px);
   }
 
+  .\32xl\:text-\[max\(0\.8888vw\2c 19px\)\]{
+    font-size: max(0.8888vw,19px);
+  }
+
+  .\32xl\:text-\[max\(0\.8888vw\2c 23px\)\]{
+    font-size: max(0.8888vw,23px);
+  }
+
+  .\32xl\:text-\[max\(1\.444vw\2c 31px\)\]{
+    font-size: max(1.444vw,31px);
+  }
+
+  .\32xl\:text-\[max\(1vw\2c 21\.6px\)\]{
+    font-size: max(1vw,21.6px);
+  }
+
+  .\32xl\:text-\[max\(1vw\2c 25\.6px\)\]{
+    font-size: max(1vw,25.6px);
+  }
+
   .\32xl\:leading-\[max\(2vw\2c 24px\)\]{
     line-height: max(2vw,24px);
   }
 
   .\32xl\:leading-\[max\(1\.6vw\2c 24px\)\]{
     line-height: max(1.6vw,24px);
+  }
+
+  .\32xl\:leading-\[max\(1\.6vw\2c 35px\)\]{
+    line-height: max(1.6vw,35px);
   }
 }
 
